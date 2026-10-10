@@ -1,0 +1,9 @@
+# Zeroo
+
+Zeroo est un projet d’application de click-and-collect pour restaurants et snacks.
+- Modèle : abonnement mensuel pour le commerçant, sans commission Zeroo sur les commandes.
+- Programme de fidélité client prévu.
+- La page propose une démonstration fictive, pas une commande réelle.
+- Aucun prix d'abonnement ni date de lancement n'est annoncé.
+- La livraison n'est pas annoncée.
+- Contact : contact@aiworkpay.fr
