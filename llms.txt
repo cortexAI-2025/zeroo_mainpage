@@ -1,9 +1,32 @@
-# Zeroo
+# zidozid — Click & Collect / Delivery
 
-Zeroo est un projet d’application de click-and-collect pour restaurants et snacks.
-- Modèle : abonnement mensuel pour le commerçant, sans commission Zeroo sur les commandes.
-- Programme de fidélité client prévu.
-- La page propose une démonstration fictive, pas une commande réelle.
-- Aucun prix d'abonnement ni date de lancement n'est annoncé.
-- La livraison n'est pas annoncée.
-- Contact : contact@aiworkpay.fr
+> Site officiel de présentation de Zidozid, service de commande à emporter et de livraison indépendante, exploité par AIWorkPay. Langue : français.
+
+## État du service
+Service en préparation. Ce site vitrine permet uniquement de demander des informations et de se préinscrire par e-mail. Il ne crée pas de compte, ne prend pas de commande et ne facture aucun abonnement. Aucun endpoint de commande ou de paiement n’est proposé ici.
+
+## Fonctionnement et tarifs annoncés
+- Le client choisit le retrait sur place ou la livraison, selon la disponibilité des livreurs rattachés au restaurant.
+- Livraison : deux paiements séparés, le repas au restaurant et la course au livreur ; le prix de la course est fixé par le restaurant et affiché avant validation.
+- Le client paie le repas au restaurant et le tarif de livraison au livreur ; le restaurant ne rémunère pas le livreur.
+- Zéro commission Zidozid pour les restaurants et les livreurs. Les éventuels frais du prestataire de paiement restent distincts.
+- 30 jours d’essai gratuit pour restaurants et livreurs.
+- Livreur Start : 14,99 EUR HT/mois ou 149,99 EUR HT/an.
+- Restaurant Start : 19,99 EUR HT/mois ou 199,99 EUR HT/an.
+- Restaurant Pro multisite : 29,99 EUR HT/mois ou 299,99 EUR HT/an.
+- Zéro commission ZEROO ; frais de paiement éventuels distincts.
+- Livreurs : auto-entrepreneur ou société, SIRET et justificatif d’immatriculation adapté au statut ou Kbis avant activation.
+- Rattachement aux restaurants avec leur accord. Espace livreur prévu : disponibilités, courses, suivi, revenus et abonnement.
+
+## Pages de référence
+- [Accueil](https://zeroo.online/)
+- [Démo interactive de l’application](https://zeroo.online/demo/)
+- [Livraison : qui paie quoi](https://zeroo.online/#paiement)
+- [Livreurs](https://zeroo.online/#livreurs)
+- [Tarifs](https://zeroo.online/#tarif)
+- [Questions fréquentes](https://zeroo.online/#faq)
+- [Mentions légales](https://zeroo.online/mentions-legales/)
+- [Confidentialité](https://zeroo.online/confidentialite/)
+
+## Contact
+contact@aiworkpay.fr — informations et préinscriptions.

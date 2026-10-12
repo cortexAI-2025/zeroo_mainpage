@@ -1,0 +1,1060 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Démo interactive · Zidozid</title>
+<meta name="description" content="Essayez l'application Zidozid : commande à emporter ou livrée, deux paiements (repas au restaurant, course au livreur), sans commission. Démo cliquable côté client, restaurant et livreur." />
+<link rel="canonical" href="https://zeroo.online/demo/" />
+<meta name="theme-color" content="#E1140A" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Démo interactive · Zidozid" />
+<meta property="og:description" content="Essayez l'application : client, restaurant et livreur, la même commande de bout en bout." />
+<meta property="og:image" content="https://zeroo.online/og-image.png" />
+<meta property="og:url" content="https://zeroo.online/demo/" />
+<link rel="icon" type="image/png" href="data:image/png;base64,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" />
+<style>
+:root {
+  --brand: #e1140a; --brand-dark: #b80f07; --orange: #f07800; --yellow: #ffc400;
+  --text: #14161a; --muted: #5b6170; --bg: #ffffff; --surface: #f3f4f6; --border: #e3e5e8;
+  --success: #138a3e; --success-bg: #e7f6ec; --danger: #c0110a; --page: #eceef1; --link: #c0110a;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: var(--text); background: var(--page); font-size: 15px; line-height: 1.4;
+}
+button { font: inherit; color: inherit; }
+input, textarea { font: inherit; }
+
+/* ---- Page ---- */
+.top { display: flex; align-items: center; gap: 14px; max-width: 1100px; margin: 0 auto; padding: 18px 20px 6px; }
+.top img { width: 74px; }
+.top h1 { font-size: 20px; margin: 0; }
+.top p { margin: 2px 0 0; color: var(--muted); font-size: 14px; }
+.stage { display: grid; grid-template-columns: 330px 1fr; gap: 28px; max-width: 1100px; margin: 0 auto; padding: 14px 20px 40px; align-items: start; }
+aside { display: flex; flex-direction: column; gap: 14px; position: sticky; top: 14px; }
+.panel { background: var(--bg); border-radius: 18px; padding: 16px; box-shadow: 0 1px 2px rgba(0,0,0,.06); }
+.panel h2 { font-size: 15px; margin: 0 0 10px; }
+.roles { display: grid; gap: 8px; }
+.role { display: flex; align-items: center; gap: 12px; width: 100%; text-align: left; padding: 10px 12px; border-radius: 14px; border: 2px solid var(--border); background: var(--bg); cursor: pointer; position: relative; }
+.role .ico { font-size: 22px; width: 34px; height: 34px; display: grid; place-items: center; border-radius: 10px; background: var(--surface); }
+.role b { display: block; font-size: 15px; }
+.role small { color: var(--muted); }
+.role.on { border-color: var(--brand); background: #fff5f4; }
+.role .dot { position: absolute; top: 8px; right: 10px; min-width: 20px; height: 20px; padding: 0 6px; border-radius: 10px; background: var(--brand); color: #fff; font-size: 12px; font-weight: 700; display: grid; place-items: center; }
+.guide-step { background: #fff8e6; border: 1px solid #ffe2a3; border-radius: 12px; padding: 12px; }
+.guide-step b { display: block; margin-bottom: 4px; }
+.guide-list { margin: 8px 0 0; padding-left: 18px; color: var(--muted); font-size: 13.5px; }
+.guide-list li { margin: 3px 0; }
+.small { font-size: 12.5px; color: var(--muted); }
+.phone-wrap { display: flex; justify-content: center; }
+
+/* ---- Téléphone ---- */
+.phone { width: 390px; height: 820px; border: 12px solid #15171b; border-radius: 52px; background: var(--bg); overflow: hidden; position: relative; display: flex; flex-direction: column; box-shadow: 0 20px 50px rgba(0,0,0,.18); }
+.statusbar { height: 40px; flex: none; display: flex; align-items: center; justify-content: space-between; padding: 6px 26px 0; font-weight: 600; font-size: 14px; }
+.statusbar .notch { width: 110px; height: 26px; border-radius: 14px; background: #15171b; }
+.header { height: 50px; flex: none; display: flex; align-items: center; gap: 8px; padding: 0 12px; border-bottom: 1px solid var(--border); }
+.header .back { border: 0; background: none; font-size: 24px; cursor: pointer; width: 36px; height: 36px; border-radius: 18px; }
+.header .back:hover { background: var(--surface); }
+.header h3 { margin: 0; font-size: 16px; font-weight: 600; }
+.content { flex: 1; overflow-y: auto; padding: 16px 16px 24px; display: flex; flex-direction: column; gap: 12px; scrollbar-width: thin; }
+.tabbar { flex: none; display: flex; border-top: 1px solid var(--border); padding: 6px 4px 14px; background: var(--bg); }
+.tab { flex: 1; border: 0; background: none; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 2px; font-size: 11px; color: var(--muted); padding: 4px 0; position: relative; }
+.tab span { font-size: 21px; filter: grayscale(1); opacity: .7; }
+.tab.on { color: var(--brand); font-weight: 600; }
+.tab.on span { filter: none; opacity: 1; }
+
+/* ---- Éléments d'interface ---- */
+.title { font-size: 26px; font-weight: 800; margin: 0; letter-spacing: -.01em; }
+.subtitle { font-size: 17px; font-weight: 700; margin: 0; }
+.muted { color: var(--muted); font-size: 14px; margin: 0; }
+.link { color: var(--link); font-weight: 600; margin: 0; }
+.error { color: var(--danger); font-size: 14px; margin: 0; }
+p { margin: 0; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 18px; padding: 14px; display: flex; flex-direction: column; gap: 8px; }
+.card.click { cursor: pointer; }
+.card.click:hover { border-color: #c9ccd2; }
+.card.white { background: var(--bg); }
+.row { display: flex; align-items: center; gap: 10px; }
+.between { justify-content: space-between; }
+.grow { flex: 1; min-width: 0; }
+.btn { border: 2px solid transparent; border-radius: 14px; padding: 12px 16px; font-weight: 700; cursor: pointer; width: 100%; text-align: center; }
+.btn.primary { background: var(--brand); color: #fff; }
+.btn.primary:hover { background: var(--brand-dark); }
+.btn.secondary { background: var(--surface); border-color: var(--border); }
+.btn.ghost { background: none; color: var(--link); }
+.btn.danger { background: #fde7e6; color: var(--danger); }
+.btn.dark { background: #000; color: #fff; }
+.btn:disabled { opacity: .45; cursor: not-allowed; }
+.btn.sm { padding: 8px 12px; width: auto; border-radius: 12px; font-size: 14px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { border: 1px solid var(--border); background: var(--bg); border-radius: 999px; padding: 7px 13px; font-weight: 600; font-size: 14px; cursor: pointer; }
+.chip.on { background: var(--brand); border-color: var(--brand); color: #fff; }
+.badge { display: inline-block; border-radius: 999px; padding: 3px 9px; font-size: 12px; font-weight: 700; background: var(--border); white-space: nowrap; }
+.badge.ok { background: var(--success); color: #fff; }
+.badge.warn { background: var(--brand); color: #fff; }
+.badge.off { background: #fde7e6; color: var(--danger); }
+.field { display: flex; flex-direction: column; gap: 4px; }
+.field label { font-size: 13px; color: var(--muted); }
+.input { border: 1px solid var(--border); border-radius: 12px; padding: 11px 12px; background: var(--bg); width: 100%; }
+.input:focus { outline: 2px solid var(--brand); border-color: transparent; }
+.fill { border: 0; background: none; color: var(--link); font-size: 12.5px; font-weight: 600; cursor: pointer; padding: 0; text-align: left; }
+.switch { position: relative; width: 50px; height: 30px; border-radius: 15px; background: var(--border); border: 0; cursor: pointer; flex: none; }
+.switch::after { content: ''; position: absolute; top: 3px; left: 3px; width: 24px; height: 24px; border-radius: 12px; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,.3); transition: left .15s; }
+.switch.on { background: var(--brand); }
+.switch.on::after { left: 23px; }
+.code { font-size: 42px; font-weight: 800; letter-spacing: 8px; text-align: center; }
+.center { text-align: center; align-items: center; }
+.steps { display: flex; flex-direction: column; gap: 7px; margin-top: 4px; }
+.step { display: flex; align-items: center; gap: 10px; color: var(--muted); }
+.step i { width: 12px; height: 12px; border-radius: 6px; background: var(--border); flex: none; }
+.step.on { color: var(--text); }
+.step.on i { background: var(--brand); }
+.item { display: flex; gap: 12px; align-items: center; padding: 12px; border-radius: 16px; border: 1px solid var(--border); background: var(--bg); cursor: pointer; }
+.item:hover { border-color: #c9ccd2; }
+.item.off { opacity: .5; cursor: not-allowed; }
+.item .thumb { width: 54px; height: 54px; border-radius: 12px; background: #fff1e8; display: grid; place-items: center; font-size: 26px; flex: none; }
+.dots { display: flex; gap: 5px; flex-wrap: wrap; }
+.dots i { width: 22px; height: 22px; border-radius: 11px; border: 2px solid var(--brand); display: grid; place-items: center; font-size: 11px; font-style: normal; }
+.dots i.on { background: var(--brand); color: #fff; }
+.tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.tiles.two { grid-template-columns: repeat(2, 1fr); }
+.tile { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 10px; }
+.tile b { display: block; font-size: 18px; }
+.cartbar { position: sticky; bottom: 0; margin-top: auto; }
+.listrow { display: flex; align-items: center; gap: 10px; padding: 13px 2px; border-bottom: 1px solid var(--border); cursor: pointer; }
+.listrow:hover { background: var(--surface); }
+.sugg { border: 1px solid var(--border); border-radius: 12px; overflow: hidden; background: var(--bg); }
+.sugg button { display: block; width: 100%; text-align: left; border: 0; background: none; padding: 10px 12px; cursor: pointer; border-bottom: 1px solid var(--border); }
+.sugg button:last-child { border-bottom: 0; }
+.sugg button:hover { background: var(--surface); }
+hr { border: 0; border-top: 1px solid var(--border); margin: 2px 0; width: 100%; }
+.opt { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--border); cursor: pointer; }
+.opt .box { width: 22px; height: 22px; border: 2px solid #b9bdc6; border-radius: 6px; display: grid; place-items: center; flex: none; color: #fff; font-size: 14px; }
+.opt .box.radio { border-radius: 11px; }
+.opt.on .box { background: var(--brand); border-color: var(--brand); }
+.qty { display: flex; align-items: center; gap: 12px; }
+.qty button { width: 34px; height: 34px; border-radius: 17px; border: 1px solid var(--border); background: var(--bg); font-size: 20px; cursor: pointer; }
+
+/* ---- Feuilles, notifications ---- */
+.overlay { position: absolute; inset: 0; background: rgba(0,0,0,.38); display: flex; align-items: flex-end; z-index: 5; }
+.sheet { background: var(--bg); width: 100%; max-height: 88%; overflow-y: auto; border-radius: 22px 22px 0 0; padding: 10px 18px 22px; display: flex; flex-direction: column; gap: 12px; }
+.sheet .grab { width: 40px; height: 5px; border-radius: 3px; background: var(--border); align-self: center; }
+.stripe { font-size: 12px; color: #635bff; font-weight: 800; letter-spacing: .02em; }
+.amount { font-size: 34px; font-weight: 800; }
+.cardline { display: flex; align-items: center; gap: 10px; border: 1px solid var(--border); border-radius: 12px; padding: 12px; }
+.cardline .brand { background: #1a1f71; color: #fff; font-weight: 800; font-size: 11px; padding: 3px 6px; border-radius: 4px; }
+.banner { position: absolute; top: 46px; left: 10px; right: 10px; z-index: 6; background: rgba(250,250,252,.97); border-radius: 18px; padding: 10px 12px; box-shadow: 0 8px 30px rgba(0,0,0,.2); display: flex; gap: 10px; align-items: flex-start; animation: drop .25s ease-out; }
+.banner img { width: 34px; height: 34px; border-radius: 9px; background: #fff; object-fit: contain; border: 1px solid var(--border); }
+.banner b { display: block; font-size: 14px; }
+.banner small { color: var(--muted); font-size: 11px; }
+.toast { position: absolute; bottom: 92px; left: 50%; transform: translateX(-50%); z-index: 7; background: #15171b; color: #fff; padding: 10px 14px; border-radius: 12px; font-size: 13.5px; max-width: 330px; text-align: center; animation: fade .2s; }
+@keyframes drop { from { transform: translateY(-20px); opacity: 0; } }
+@keyframes fade { from { opacity: 0; } }
+
+@media (max-width: 760px) {
+  .stage { grid-template-columns: 1fr; padding: 8px 0 30px; gap: 12px; }
+  aside { position: static; padding: 0 12px; }
+  .top { padding: 12px 14px 0; }
+  .top img { width: 56px; }
+  .roles { grid-template-columns: repeat(3, 1fr); }
+  .role { flex-direction: column; text-align: center; gap: 4px; padding: 8px 4px; }
+  .role small { display: none; }
+  .phone { width: 100%; max-width: 430px; height: 78vh; min-height: 600px; border-width: 0; border-radius: 0; box-shadow: none; }
+  .statusbar { display: none; }
+  .banner { top: 8px; }
+  #guide-more { display: none; }
+}
+/* ---- Dans l'APK de démo : plein écran, sans cadre de téléphone ---- */
+body.in-app { height: 100vh; overflow: hidden; background: var(--bg); }
+.in-app .top, .in-app #guide-more { display: none; }
+.in-app .stage { display: flex; flex-direction: column; height: 100vh; max-width: none; padding: 0; gap: 0; }
+.in-app aside { position: static; padding: 6px 8px; gap: 6px; flex: none; background: var(--page); }
+.in-app .panel { padding: 8px; border-radius: 12px; }
+.in-app .panel h2 { display: none; }
+.in-app .roles { grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.in-app .role { flex-direction: row; justify-content: center; gap: 6px; padding: 6px; border-radius: 10px; }
+.in-app .role small { display: none; }
+.in-app .role b { font-size: 13px; }
+.in-app .role .ico { width: 24px; height: 24px; font-size: 15px; }
+.in-app .role .dot { top: -6px; right: -4px; }
+.in-app .guide-step { padding: 7px 9px; font-size: 12.5px; line-height: 1.35; }
+.in-app .guide-step b { display: inline; margin-right: 4px; }
+.in-app #guide > div { margin-top: 6px !important; }
+.in-app #guide .btn { padding: 7px 10px; font-size: 13px; border-radius: 10px; }
+.in-app #guide { display: flex; flex-wrap: wrap; gap: 6px; }
+.in-app #guide .guide-step { flex: 1 1 100%; }
+.in-app #guide > div { flex: 1; margin: 0 !important; }
+.in-app .phone-wrap { flex: 1; min-height: 0; }
+.in-app .phone { width: 100%; max-width: none; height: 100%; min-height: 0; border: 0; border-radius: 0; box-shadow: none; }
+.in-app .statusbar { display: none; }
+.in-app .banner { top: 8px; }
+
+/* Recadrage du visuel : symbole et nom uniquement, sans bords de la photo. */
+.brand-crop { display: inline-block; position: relative; width: 180px; height: 54px; overflow: hidden; vertical-align: middle; }
+.brand-crop img, .header .brand-crop img { position: absolute; width: 276.48px; max-width: none; height: 150.84px; left: -48.6px; top: -49.5px; margin: 0; border: 0; border-radius: 0; }
+</style>
+</head>
+<body>
+<div class="top">
+  <a href="/" aria-label="Retour à zeroo.online"><span class="brand-crop"><img src="/img/logo-20261010.jpg" alt="Zidozid" /></span></a>
+  <div>
+    <h1>Démo interactive de l'application</h1>
+    <p>À emporter ou livré, sans commission. Passez d'un rôle à l'autre : la même commande circule entre le client, le restaurant et le livreur.</p>
+  </div>
+</div>
+<div class="stage">
+  <aside>
+    <div class="panel"><h2>Je suis…</h2><div class="roles" id="roles"></div></div>
+    <div class="panel" id="guide"></div>
+    <div class="panel" id="guide-more">
+      <h2>Ce que montre la maquette</h2>
+      <ul class="guide-list">
+        <li>Client : recherche, menu avec options, menu offert (fidélité), retrait ou livraison, deux paiements (repas au restaurant, course au livreur), suivi en direct.</li>
+        <li>Restaurant : commandes, menu, boutique, réglages de livraison et livreurs.</li>
+        <li>Livreur : disponibilité, courses, codes de retrait et de livraison, revenus, abonnement.</li>
+      </ul>
+      <p class="small" style="margin-top:10px">Démo : aucune donnée réelle, aucun paiement. Les montants sont ceux du restaurant de démonstration « Chez Samir ».</p><p style="margin-top:12px"><a href="/" style="color:var(--link);font-weight:700">← Retour à zeroo.online</a></p>
+    </div>
+  </aside>
+  <div class="phone-wrap"><div class="phone" id="phone"></div></div>
+</div>
+
+<script>
+'use strict';
+const LOGO = '/img/logo-20261010.jpg';
+
+// ---------------------------------------------------------------------------
+// Données de démonstration
+// ---------------------------------------------------------------------------
+const MENU = [
+  { cat: 'Menus', items: [
+    { id: 'tacos', name: 'Menu Tacos', desc: 'Tacos 2 viandes, frites et boisson', price: 1050, loyalty: true, emoji: '🌮', groups: [
+      { id: 'sauce', name: 'Sauce', min: 1, max: 2, options: [
+        { id: 'alg', name: 'Algérienne', p: 0 }, { id: 'sam', name: 'Samouraï', p: 0 }, { id: 'bla', name: 'Blanche', p: 0 } ] },
+      { id: 'sup', name: 'Suppléments', min: 0, max: 3, options: [
+        { id: 'ched', name: 'Cheddar', p: 100 }, { id: 'vde', name: 'Viande en plus', p: 250 } ] } ] },
+    { id: 'americain', name: 'Menu Américain', desc: 'Américain, frites et boisson', price: 950, loyalty: true, emoji: '🍔', groups: [] } ] },
+  { cat: 'Sandwichs', items: [
+    { id: 'kebab', name: 'Kebab', desc: 'Pain maison, salade, tomates, oignons', price: 750, loyalty: false, emoji: '🥙', groups: [
+      { id: 'sauce', name: 'Sauce', min: 1, max: 1, options: [ { id: 'bla', name: 'Blanche', p: 0 }, { id: 'har', name: 'Harissa', p: 0 } ] } ] } ] },
+  { cat: 'Boissons', items: [
+    { id: 'canette', name: 'Canette 33 cl', desc: 'Au choix selon le stock', price: 150, loyalty: false, emoji: '🥤', groups: [] } ] },
+];
+const ITEMS = MENU.flatMap((c) => c.items);
+const ADDRESSES = [
+  { id: 'a1', line: '5 Rue Saint-Augustin', pc: '75002', city: 'Paris', dist: 650 },
+  { id: 'a2', line: '18 Rue du Faubourg Montmartre', pc: '75009', city: 'Paris', dist: 1400 },
+  { id: 'a3', line: '40 Avenue de la Grande Armée', pc: '75017', city: 'Paris', dist: 4300 },
+];
+const ROLES = {
+  client: { icon: '🛍️', name: 'Client', who: 'Nadia commande' },
+  merchant: { icon: '🏪', name: 'Restaurant', who: 'Samir, « Chez Samir »' },
+  courier: { icon: '🛵', name: 'Livreur', who: 'Karim, indépendant' },
+};
+const TABS = {
+  client: [['explore', '🏪', 'À proximité'], ['orders', '🧾', 'Commandes'], ['loyalty', '🎁', 'Fidélité'], ['account', '👤', 'Compte']],
+  merchant: [['orders', '🔔', 'Commandes'], ['menu', '🍽️', 'Menu'], ['shop', '🏬', 'Boutique'], ['account', '👤', 'Compte']],
+  courier: [['runs', '🛵', 'Courses'], ['restaurants', '🏪', 'Restaurants'], ['earnings', '💶', 'Revenus'], ['account', '👤', 'Compte']],
+};
+const ACTIVE = ['placed', 'accepted', 'preparing', 'ready', 'out_for_delivery'];
+const DONE = ['collected', 'delivered'];
+
+function initialState() {
+  return {
+    role: 'client',
+    stacks: { client: [{ s: 'explore' }], merchant: [{ s: 'orders' }], courier: [{ s: 'runs' }] },
+    cart: [], rewardKey: null, fulfillment: 'pickup', addrQuery: '', address: null, phone: '', instructions: '', note: '',
+    order: null, history: [], loyalty: { count: 7, rewards: 1 },
+    unavailable: {}, // produits en rupture
+    merchant: { published: true, paused: false, delivery: true, fee: 350, radius: 3000, lea: 'pending', prep: 10 },
+    courier: { available: true, today: 700, todayCount: 2, week: 2450, month: 9800, monthCount: 28, links: { kebab: null } },
+    notifs: { client: [], merchant: [], courier: [] },
+    modal: null, banner: null, toast: null, codeInput: '', refusing: false, departure: null, search: '',
+  };
+}
+let S = initialState();
+
+// ---------------------------------------------------------------------------
+// Outils
+// ---------------------------------------------------------------------------
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+const fmt = (cents) => (cents / 100).toFixed(2).replace('.', ',') + ' €';
+const fmtDist = (m) => (m < 1000 ? `${Math.round(m / 10) * 10} m` : `${(m / 1000).toFixed(1).replace('.', ',')} km`);
+const time = (d) => d.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' });
+const inMinutes = (n) => time(new Date(Date.now() + n * 60000));
+const trialEnd = new Date(Date.now() + 23 * 86400000).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long' });
+const stack = () => S.stacks[S.role];
+const currentScreen = () => stack()[stack().length - 1];
+const findItem = (id) => ITEMS.find((i) => i.id === id);
+const lineTotal = (l) => l.unit * l.qty;
+const cartSub = () => S.cart.reduce((s, l) => s + lineTotal(l), 0);
+const cartCount = () => S.cart.reduce((s, l) => s + l.qty, 0);
+const isDelivery = () => S.merchant.delivery && S.fulfillment === 'delivery';
+const phoneOk = (p) => /^\+?\d[\d .-]{8,18}\d$/.test(p.trim());
+const courierBusy = () => !!S.order && S.order.fulfillment === 'delivery' && ACTIVE.includes(S.order.status);
+const canOrder = () => S.merchant.published && !S.merchant.paused;
+function cartDiscount() {
+  if (!S.rewardKey || S.loyalty.rewards < 1) return 0;
+  const line = S.cart.find((l) => l.key === S.rewardKey);
+  if (!line) return 0;
+  const sub = cartSub();
+  return sub - line.base < 50 ? sub : line.base; // minimum Stripe 0,50 €
+}
+function quote() {
+  if (!S.address) return null;
+  if (!S.merchant.delivery) return { ok: false, msg: 'Ce restaurant ne livre pas pour le moment.' };
+  if (S.address.dist > S.merchant.radius) return { ok: false, msg: 'Cette adresse est hors de la zone de livraison du restaurant.' };
+  if (!S.courier.available || courierBusy()) return { ok: false, msg: 'Aucun livreur disponible pour le moment. Réessayez dans quelques minutes ou choisissez le retrait.' };
+  return { ok: true, msg: `Livraison possible à ${fmtDist(S.address.dist)} du restaurant.` };
+}
+const canPay = () => S.cart.length > 0 && canOrder() && (!isDelivery() || (quote()?.ok && phoneOk(S.phone)));
+function randomCode() {
+  const chars = '23456789ABCDEFGHJKMNPQRSTUVWXYZ';
+  return Array.from({ length: 4 }, () => chars[Math.floor(Math.random() * chars.length)]).join('');
+}
+function notify(role, title, body) {
+  if (role === S.role) { S.banner = { title, body }; return; }
+  S.notifs[role].push({ title, body });
+}
+function toast(msg) { S.toast = msg; }
+function push(screen, params = {}) { stack().push({ s: screen, ...params }); }
+function setRole(role) {
+  S.role = role; S.modal = null; S.refusing = false; S.codeInput = '';
+  const pending = S.notifs[role];
+  if (pending.length) { S.banner = pending[pending.length - 1]; S.notifs[role] = []; }
+}
+
+// ---------------------------------------------------------------------------
+// Composants
+// ---------------------------------------------------------------------------
+const btn = (label, a, v = '', kind = 'primary', extra = '') =>
+  `<button class="btn ${kind}" data-a="${a}" data-v="${esc(v)}" ${extra}>${label}</button>`;
+const chip = (label, a, v, on) => `<button class="chip ${on ? 'on' : ''}" data-a="${a}" data-v="${esc(v)}">${label}</button>`;
+const sw = (on, a, v = '', disabled = false) =>
+  `<button class="switch ${on ? 'on' : ''}" role="switch" aria-checked="${on}" data-a="${a}" data-v="${esc(v)}" ${disabled ? 'disabled style="opacity:.45;cursor:not-allowed"' : ''}></button>`;
+const badge = (label, kind = '') => `<span class="badge ${kind}">${label}</span>`;
+function dots(count) {
+  return `<div class="dots">${Array.from({ length: 9 }, (_, i) => `<i class="${i < count ? 'on' : ''}">${i < count ? '✓' : ''}</i>`).join('')}<i style="border-color:var(--orange);color:var(--orange)">🎁</i></div>`;
+}
+
+// ---------------------------------------------------------------------------
+// Écrans : client
+// ---------------------------------------------------------------------------
+const CLIENT = {
+  explore() {
+    const others = [
+      ['Le Kebab de Léa', 'Sandwicherie · Lyon 2e', 'Fermé', 'off'],
+      ['Boulangerie du Marché', 'Boulangerie · 1,2 km', 'Ouvert', 'ok'],
+    ];
+    return { body: `
+      <h2 class="title">À proximité</h2>
+      <input class="input" placeholder="Nom, ville ou code postal" data-a="noop" />
+      <div class="chips">${chip('📍 Utiliser ma position', 'toast', 'Position utilisée une seule fois, jamais enregistrée.', true)}</div>
+      <div class="card click" data-a="open-merchant">
+        <div class="row between"><p class="subtitle">Chez Samir</p>${canOrder() ? badge('Ouvert', 'ok') : badge(S.merchant.paused ? 'En pause' : 'Non publié', 'off')}</div>
+        <p class="muted">Snack · 12 rue de la Paix, Paris · 350 m</p>
+        ${S.merchant.delivery ? `<p class="link">🛵 Livraison possible · ${fmt(S.merchant.fee)}</p>` : ''}
+        <p class="muted">🎁 Votre carte : ${S.loyalty.count}/9 · ${S.loyalty.rewards} menu offert</p>
+      </div>
+      ${others.map(([n, d, b, k]) => `
+        <div class="card click" data-a="toast" data-v="Dans cette maquette, seul « Chez Samir » est interactif.">
+          <div class="row between"><p class="subtitle">${n}</p>${badge(b, k)}</div><p class="muted">${d}</p>
+        </div>`).join('')}
+      <p class="muted">Client, vous payez le prix de la carte, sans frais de service.</p>` };
+  },
+
+  merchant() {
+    const disabled = !canOrder();
+    return { title: 'Chez Samir', back: true, body: `
+      <h2 class="title">Chez Samir</h2>
+      <p class="muted">Snack · 12 rue de la Paix, 75002 Paris</p>
+      <div class="row">${canOrder() ? badge('Ouvert · prêt en 12 min', 'ok') : badge(S.merchant.paused ? 'En pause' : 'Non publié', 'off')}</div>
+      ${S.merchant.delivery ? `<p class="link">🛵 Livraison possible · ${fmt(S.merchant.fee)}</p>` : ''}
+      <p>Tacos, sandwichs et assiettes maison.</p>
+      <div class="card">
+        <div class="row between"><p class="subtitle">Ma carte de fidélité</p><span class="muted">${S.loyalty.count}/9</span></div>
+        ${dots(S.loyalty.count)}
+        <p class="muted">9 menus formules achetés = le 10<sup>e</sup> offert.${S.loyalty.rewards ? ` <b style="color:var(--orange)">${S.loyalty.rewards} menu offert à utiliser.</b>` : ''}</p>
+      </div>
+      ${disabled ? '<p class="error">Ce commerce ne prend pas de commandes pour le moment.</p>' : ''}
+      ${MENU.map((c) => `
+        <p class="subtitle" style="margin-top:6px">${c.cat}</p>
+        ${c.items.map((i) => {
+          const off = S.unavailable[i.id];
+          return `<div class="item ${off || disabled ? 'off' : ''}" data-a="${off || disabled ? 'noop' : 'open-item'}" data-v="${i.id}">
+            <div class="thumb">${i.emoji}</div>
+            <div class="grow"><p><b>${i.name}</b></p><p class="muted">${esc(i.desc)}</p>
+              <div class="row" style="margin-top:4px"><b>${fmt(i.price)}</b>${i.loyalty ? badge('Menu formule') : ''}${off ? badge('Rupture', 'off') : ''}</div></div>
+          </div>`;
+        }).join('')}`).join('')}
+      ${S.cart.length ? `<div class="cartbar">${btn(`Voir le panier (${cartCount()}) · ${fmt(cartSub())}`, 'go', 'cart')}</div>` : ''}` };
+  },
+
+  cart() {
+    if (!S.cart.length) {
+      return { title: 'Mon panier', back: true, body: `<p class="muted">Votre panier est vide.</p>${btn('Voir le menu de Chez Samir', 'open-merchant', '', 'secondary')}` };
+    }
+    const discount = cartDiscount();
+    const delivery = isDelivery();
+    const q = delivery ? quote() : null;
+    const fee = delivery ? S.merchant.fee : 0;
+    const total = cartSub() - discount + fee;
+    return { title: 'Mon panier', back: true, body: `
+      <h2 class="title">Chez Samir</h2>
+      ${S.cart.map((l) => `
+        <div class="card">
+          <div class="row">
+            <div class="grow"><p>${l.name}</p>
+              ${l.opts.length ? `<p class="muted">${esc(l.opts.join(', '))}</p>` : ''}
+              <p class="muted">${fmt(lineTotal(l))}</p>
+              ${l.key === S.rewardKey && S.loyalty.rewards ? '<p class="link">🎁 Menu offert appliqué</p>' : ''}</div>
+            <div class="qty"><button data-a="qty" data-v="${l.key}|-1" aria-label="Moins">−</button><b>${l.qty}</b><button data-a="qty" data-v="${l.key}|1" aria-label="Plus">+</button></div>
+          </div>
+          ${S.loyalty.rewards && l.loyalty ? btn(l.key === S.rewardKey ? 'Ne pas utiliser mon menu offert' : 'Utiliser mon menu offert ici', 'reward', l.key, 'ghost') : ''}
+        </div>`).join('')}
+      ${S.loyalty.rewards ? `<div class="card"><p>🎁 ${S.loyalty.rewards} menu formule offert à utiliser</p><p class="muted">Le menu est offert ; les suppléments payants restent dus.</p></div>` : ''}
+      ${S.merchant.delivery ? `
+        <div class="card">
+          <div class="chips">${chip('À emporter', 'fulfillment', 'pickup', !delivery)}${chip('🛵 Livraison', 'fulfillment', 'delivery', delivery)}</div>
+          ${delivery ? `
+            <div class="field"><label>Adresse de livraison</label>
+              <input class="input" data-m="addrQuery" data-live="addr" value="${esc(S.addrQuery)}" placeholder="Numéro et rue" autocomplete="off" />
+              <div id="addr-sugg">${addrSuggestions()}</div>
+              <button class="fill" data-a="fill-addr">Démo : choisir « 5 Rue Saint-Augustin »</button>
+            </div>
+            <div class="field"><label>Téléphone pour le livreur</label>
+              <input class="input" data-m="phone" data-live="pay" value="${esc(S.phone)}" inputmode="tel" placeholder="06 12 34 56 78" />
+              <button class="fill" data-a="fill-phone">Démo : remplir 06 98 76 54 32</button>
+            </div>
+            <div class="field"><label>Instructions pour le livreur (facultatif)</label>
+              <input class="input" data-m="instructions" value="${esc(S.instructions)}" placeholder="Ex. digicode, étage, interphone" /></div>
+            ${!S.address ? '<p class="muted">Choisissez votre adresse de livraison dans la liste.</p>' : q.ok ? `<p class="link">${q.msg}</p>` : `<p class="error">${q.msg}</p>`}
+          ` : '<p class="muted">À récupérer chez Chez Samir, 12 rue de la Paix.</p>'}
+        </div>` : ''}
+      <div class="field"><label>Une précision pour le commerçant ? (facultatif)</label>
+        <input class="input" data-m="note" value="${esc(S.note)}" placeholder="Ex. sans oignons" /></div>
+      <div class="row between"><span>Sous-total</span><span>${fmt(cartSub())}</span></div>
+      ${discount ? `<div class="row between"><span>Menu offert</span><span>− ${fmt(discount)}</span></div>` : ''}
+      ${delivery ? `<div class="row between"><span>Livraison</span><span>${fmt(fee)}</span></div>` : ''}
+      <div class="row between"><b style="font-size:18px">Total</b><b style="font-size:18px">${fmt(total)}</b></div>
+      <p class="muted">Votre carte est seulement autorisée : vous n'êtes débité que si le commerçant accepte la commande.</p>
+      ${delivery ? '<p class="muted">Deux paiements : le repas au restaurant, la course au livreur. Aucun frais Zidozid.</p>' : '<p class="muted">Prix de la carte, sans frais de service.</p>'}
+      <div id="pay-btn">${payButton(total)}</div>` };
+  },
+
+  order(params) {
+    const o = params.id === 'current' ? S.order : S.history.find((h) => h.id === params.id);
+    if (!o) return { title: 'Ma commande', back: true, body: '<p class="muted">Commande introuvable.</p>' };
+    const delivery = o.fulfillment === 'delivery';
+    const steps = delivery
+      ? [['placed', 'Commande envoyée'], ['accepted', 'Acceptée'], ['preparing', 'En préparation'], ['ready', 'Prête !'], ['out_for_delivery', 'En route'], ['delivered', 'Livrée']]
+      : [['placed', 'Commande envoyée'], ['accepted', 'Acceptée'], ['preparing', 'En préparation'], ['ready', 'Prête !'], ['collected', 'Récupérée']];
+    const idx = steps.findIndex(([s]) => s === o.status);
+    const failed = idx === -1;
+    const done = DONE.includes(o.status);
+    const statusText = {
+      placed: delivery ? 'En attente de confirmation du restaurant et du livreur…' : 'En attente de confirmation par le commerçant…',
+      accepted: delivery ? 'Acceptée : Karim livrera votre commande.' : `Acceptée : prête vers ${o.readyAt}.`,
+      preparing: `En préparation, prête vers ${o.readyAt}.`,
+      ready: delivery ? 'Commande prête : Karim la récupère au restaurant.' : 'Votre commande est prête, vous pouvez venir la chercher !',
+      collected: 'Commande récupérée. Bon appétit !',
+      out_for_delivery: 'Karim est en route avec votre commande.',
+      delivered: 'Commande livrée. Bon appétit !',
+      refused: `Le commerçant n'a pas pu accepter votre commande${o.reason ? ` (${o.reason})` : ''}. Vous n'avez pas été débité.`,
+      cancelled: o.cancelledBy === 'courier'
+        ? "Aucun livreur n'a pu prendre votre commande. Vous n'avez pas été débité."
+        : "Commande annulée. Aucun montant n'a été débité.",
+    }[o.status];
+    return { title: 'Ma commande', back: true, body: `
+      <h2 class="title">Chez Samir</h2>
+      <p class="muted">Passée aujourd'hui à ${o.placedAt}</p>
+      <div class="card">
+        <p class="${failed ? 'error' : 'subtitle'}">${statusText}</p>
+        ${failed ? '' : `<div class="steps">${steps.map(([s, l], i) => `<div class="step ${i <= idx ? 'on' : ''}"><i></i>${l}</div>`).join('')}</div>`}
+      </div>
+      ${!failed && !done && !delivery ? `<div class="card center"><p class="muted">Code de retrait</p><p class="code">${o.code}</p><p class="muted">Montrez ce code au comptoir pour récupérer votre commande.</p></div>` : ''}
+      ${!failed && !done && delivery ? `<div class="card center"><p class="muted">Code de livraison</p><p class="code">${o.dcode}</p><p class="muted">Donnez ce code au livreur à son arrivée.</p></div>` : ''}
+      ${delivery ? `<div class="card"><p>Livraison : ${esc(o.address.line)}, ${o.address.pc} ${o.address.city}</p><p class="muted">Votre livreur : Karim</p></div>` : ''}
+      <div class="card">
+        <p class="subtitle">Détail</p>
+        ${o.items.map((l) => `<div class="row between"><span>${l.qty} × ${l.name}${l.opts.length ? `<br><span class="muted">${esc(l.opts.join(', '))}</span>` : ''}</span><span>${fmt(lineTotal(l))}</span></div>`).join('')}
+        ${o.note ? `<p class="muted">« ${esc(o.note)} »</p>` : ''}
+        ${o.discount ? `<div class="row between"><span>🎁 Menu offert</span><span>− ${fmt(o.discount)}</span></div>` : ''}
+        ${delivery ? `<div class="row between"><span>Livraison</span><span>${fmt(o.fee)}</span></div>` : ''}
+        <hr><div class="row between"><b>${delivery ? 'Total payé' : 'Total'}</b><b>${fmt(o.meal + o.fee)}</b></div>
+      </div>
+      ${!delivery && ['placed', 'accepted', 'preparing', 'ready'].includes(o.status) ? departureCard() : ''}
+      ${done && o.earned ? `<div class="card"><p class="link">+${o.earned} menu${o.earned > 1 ? 's' : ''} formule${o.earned > 1 ? 's' : ''} ajouté${o.earned > 1 ? 's' : ''} à votre carte</p>${btn('Mes cartes de fidélité', 'tab', 'loyalty', 'ghost')}</div>` : ''}
+      ${o.status === 'placed' && o === S.order ? btn('Annuler ma commande', 'client-cancel', '', 'ghost') : ''}
+      ${btn('Revoir le menu', 'open-merchant', '', 'secondary')}` };
+  },
+
+  orders() {
+    const current = S.order && ACTIVE.includes(S.order.status) ? S.order : null;
+    const past = [...(S.order && !current ? [S.order] : []), ...S.history.slice().reverse()];
+    const row = (o, id) => {
+      const k = DONE.includes(o.status) ? 'ok' : ACTIVE.includes(o.status) ? 'warn' : 'off';
+      const lbl = { placed: 'Nouvelle', accepted: 'Acceptée', preparing: 'En préparation', ready: 'Prête', collected: 'Récupérée', out_for_delivery: 'En livraison', delivered: 'Livrée', refused: 'Refusée', cancelled: 'Annulée' }[o.status];
+      return `<div class="card click" data-a="open-order" data-v="${id}"><div class="row between"><p class="subtitle">Chez Samir</p>${badge(lbl, k)}</div><p class="muted">Aujourd'hui · ${o.placedAt} · ${fmt(o.meal + o.fee)}${o.fulfillment === 'delivery' ? ' · 🛵' : ''}</p></div>`;
+    };
+    return { body: `
+      <h2 class="title">Mes commandes</h2>
+      ${current ? `<p class="subtitle">En cours</p>${row(current, 'current')}` : ''}
+      <p class="subtitle">Passées</p>
+      ${past.map((o) => row(o, o === S.order ? 'current' : o.id)).join('')}
+      <div class="card"><div class="row between"><p class="subtitle">Chez Samir</p>${badge('Récupérée', 'ok')}</div><p class="muted">Lundi · 12:41 · 19,00 €</p></div>
+      ${!current && !past.length ? '<p class="muted">Vos commandes passées s’afficheront ici.</p>' : ''}` };
+  },
+
+  loyalty() {
+    return { body: `
+      <h2 class="title">Fidélité</h2>
+      <p class="muted">Dans chaque restaurant : 9 menus formules achetés = le 10<sup>e</sup> offert. Les produits au détail ne comptent pas.</p>
+      <div class="card click" data-a="open-merchant">
+        <div class="row between"><p class="subtitle">Chez Samir</p><span class="muted">${S.loyalty.count}/9</span></div>
+        ${dots(S.loyalty.count)}
+        ${S.loyalty.rewards ? `<p class="link">🎁 ${S.loyalty.rewards} menu offert à utiliser</p>` : `<p class="muted">Encore ${9 - S.loyalty.count} menu${9 - S.loyalty.count > 1 ? 's' : ''} avant votre menu offert.</p>`}
+      </div>` };
+  },
+
+  account() {
+    return { body: `
+      <h2 class="title">Mon compte</h2>
+      <p class="muted">Connecté en tant que client@zidozid.test</p>
+      ${btn("Passer à l'espace commerçant", 'role', 'merchant', 'secondary')}
+      ${btn("Passer à l'espace livreur", 'role', 'courier', 'secondary')}
+      ${btn('Se déconnecter', 'toast', 'Maquette : la déconnexion est désactivée.', 'secondary')}
+      ${btn('Supprimer mon compte', 'toast', 'Suppression du compte : les commandes sont anonymisées, jamais supprimées (comptabilité du restaurant).', 'danger')}
+      <p class="muted">Mentions légales · Confidentialité</p>` };
+  },
+};
+
+function addrSuggestions() {
+  const q = S.addrQuery.trim().toLowerCase();
+  if (S.address && S.addrQuery === `${S.address.line}, ${S.address.pc} ${S.address.city}`)
+    return `<p class="muted">Adresse retenue : ${esc(S.addrQuery)}</p>`;
+  if (q.length < 3) return '';
+  return `<div class="sugg">${ADDRESSES.map((a) => `<button data-a="pick-addr" data-v="${a.id}">${a.line}, ${a.pc} ${a.city}</button>`).join('')}</div>`;
+}
+function payButton(total) {
+  const t = total ?? cartSub() - cartDiscount() + (isDelivery() ? S.merchant.fee : 0);
+  return btn(t === 0 ? 'Commander mon menu offert' : `Payer · ${fmt(t)}`, 'pay', '', 'primary', canPay() ? '' : 'disabled');
+}
+function departureCard() {
+  if (S.departure) return `<div class="card"><p class="subtitle">🚶 En route</p><p>Arrivée prévue vers ${S.departure.eta} : Chez Samir est prévenu et lance la préparation au bon moment.</p><p class="muted">Votre position n'est pas enregistrée.</p></div>`;
+  return `<div class="card"><p class="subtitle">Je pars maintenant</p><p class="muted">Prévenez le restaurant : il prépare pour que tout soit chaud à votre arrivée.</p>
+    <div class="chips">${chip('🚶 À pied', 'depart', '9')}${chip('🚲 À vélo', 'depart', '4')}${chip('🚗 En voiture', 'depart', '6')}</div></div>`;
+}
+
+// ---------------------------------------------------------------------------
+// Écrans : restaurant
+// ---------------------------------------------------------------------------
+function merchantOrderCard(o) {
+  const delivery = o.fulfillment === 'delivery';
+  const waiting = delivery && o.status === 'placed' && !o.confirmed;
+  const label = { placed: 'Nouvelle', accepted: 'Acceptée', preparing: 'En préparation', ready: 'Prête', out_for_delivery: 'En livraison' }[o.status];
+  let actions = '';
+  if (o.status === 'placed' && !S.refusing) {
+    actions = `<p class="muted">Délai de préparation</p>
+      <div class="chips">${[5, 10, 15, 20, 30].map((m) => chip(`${m} min`, 'prep', m, S.merchant.prep === m)).join('')}</div>
+      ${btn(`Accepter · ${S.merchant.prep} min`, 'accept', '', 'primary', waiting ? 'disabled' : '')}
+      ${waiting ? '<p class="muted">Vous pourrez accepter dès que le livreur aura confirmé.</p>' : ''}
+      ${btn('Refuser', 'refusing', '', 'ghost')}`;
+  } else if (o.status === 'placed') {
+    actions = `<p class="muted">Pourquoi refuser ? Le client ne sera pas débité.</p>
+      <div class="chips">${['Produit en rupture', 'Trop de commandes', 'Fermeture imminente', 'Autre'].map((r) => chip(r, 'refuse', r)).join('')}</div>
+      ${btn('Annuler', 'refusing', '', 'ghost')}`;
+  } else if (o.status === 'accepted' || o.status === 'preparing') {
+    actions = `${o.status === 'accepted' ? btn('Lancer la préparation', 'mstatus', 'preparing', 'secondary') : ''}${btn('Commande prête', 'mstatus', 'ready')}`;
+  } else if (o.status === 'ready') {
+    actions = `<div class="field"><label>${delivery ? 'Code de retrait présenté par le livreur' : 'Code de retrait du client'}</label>
+      <input class="input" data-m="codeInput" data-live="handover" value="${esc(S.codeInput)}" maxlength="4" placeholder="ex. K7P2" style="text-transform:uppercase;letter-spacing:4px;font-weight:700" />
+      <button class="fill" data-a="fill-code" data-v="${o.code}">Démo : ${delivery ? 'le livreur montre' : 'le client montre'} ${o.code}</button></div>
+      <div id="handover-btn">${btn(delivery ? 'Remettre au livreur' : 'Remise au client', 'handover', '', 'primary', S.codeInput.length === 4 ? '' : 'disabled')}</div>`;
+  } else if (o.status === 'out_for_delivery') {
+    actions = '<p class="muted">Karim livre la commande au client.</p>';
+  }
+  return `<div class="card white">
+    <div class="row between"><p class="subtitle">Commande de Nadia</p>${badge(label, o.status === 'placed' ? 'warn' : o.status === 'ready' ? 'ok' : '')}</div>
+    <p class="muted">Reçue à ${o.placedAt}${o.readyAt && o.status !== 'placed' ? ` · prête vers ${o.readyAt}` : ''} · code ${o.code}</p>
+    ${delivery ? `<p>🛵 Livraison · ${o.address.city} · ${fmtDist(o.address.dist)}</p>` : '<p>🛍️ À emporter</p>'}
+    ${delivery && o.status === 'placed' ? `<p class="${waiting ? 'muted' : 'link'}">${waiting ? 'En attente de la confirmation de Karim, le livreur.' : 'Karim a confirmé la course.'}</p>` : ''}
+    ${!delivery && S.departure && o.status !== 'ready' ? `<p class="link">🚶 Nadia arrive vers ${S.departure.eta}</p>` : ''}
+    ${o.items.map((l) => `<div><p>${l.qty} × ${l.name}</p>${l.opts.length ? `<p class="muted">${esc(l.opts.join(', '))}</p>` : ''}</div>`).join('')}
+    ${o.reward ? '<p class="link">🎁 Dont 1 menu offert (fidélité)</p>' : ''}
+    ${o.note ? `<p class="link">Note : « ${esc(o.note)} »</p>` : ''}
+    <p class="subtitle">Total : ${fmt(o.meal)}</p>
+    ${actions}
+  </div>`;
+}
+
+const MERCHANT = {
+  orders() {
+    const o = S.order && ACTIVE.includes(S.order.status) ? S.order : null;
+    const finished = [...S.history, S.order].filter((x) => x && DONE.includes(x.status));
+    const count = 12 + finished.length;
+    const revenue = 18650 + finished.reduce((s, x) => s + x.meal, 0);
+    return { body: `
+      <div class="row between"><h2 class="title">Commandes</h2>${badge(canOrder() ? 'Ouvert' : S.merchant.paused ? 'En pause' : 'Non publié', canOrder() ? 'ok' : 'off')}</div>
+      <div class="tiles two"><div class="tile"><span class="muted">Aujourd'hui</span><b>${count} commandes</b></div><div class="tile"><span class="muted">Chiffre d'affaires</span><b>${fmt(revenue)}</b></div></div>
+      ${o ? merchantOrderCard(o) : `<div class="card center"><p class="muted">Aucune commande en cours. Les nouvelles commandes arrivent ici avec une sonnerie.</p>${btn('Recevoir une commande test', 'test-order', '', 'secondary')}</div>`}
+      <div class="card"><p class="subtitle">Ne manquez aucune commande</p><p class="muted">Activez les notifications pour être alerté même téléphone verrouillé.</p></div>` };
+  },
+  menu() {
+    return { body: `
+      <h2 class="title">Menu</h2>
+      <p class="muted">Touchez un interrupteur pour signaler une rupture du jour : le produit est grisé chez les clients.</p>
+      ${MENU.map((c) => `<p class="subtitle">${c.cat}</p>${c.items.map((i) => `
+        <div class="card white"><div class="row"><div class="thumb" style="width:40px;height:40px;font-size:20px;border-radius:10px;background:#fff1e8;display:grid;place-items:center">${i.emoji}</div>
+          <div class="grow"><p><b>${i.name}</b></p><p class="muted">${fmt(i.price)}${i.loyalty ? ' · Menu formule' : ''}${i.groups.length ? ` · ${i.groups.length} groupe${i.groups.length > 1 ? 's' : ''} d'options` : ''}</p></div>
+          ${sw(!S.unavailable[i.id], 'stock', i.id)}</div></div>`).join('')}`).join('')}
+      ${btn('Ajouter un produit', 'toast', 'Maquette : formulaire produit (nom, prix, photo, options, menu formule).', 'secondary')}` };
+  },
+  shop() {
+    return { body: `
+      <h2 class="title">Ma boutique</h2>
+      <div class="card"><p class="subtitle">Paiements</p>${badge('Stripe ✓', 'ok')}<p class="muted">Paiements actifs : l'argent de vos ventes est versé sur votre compte bancaire.</p></div>
+      <div class="card"><p class="subtitle">Abonnement Zidozid Pro</p><p>Essai gratuit jusqu'au ${trialEnd}.</p><p class="muted">Après 30 jours d’essai gratuit : Restaurant Start 19,99 € HT/mois ou 199,99 € HT/an ; Pro multisite 29,99 € HT/mois ou 299,99 € HT/an. Zéro commission ZEROO sur vos ventes.</p>${btn('Gérer mon abonnement', 'toast', 'Ouvre le portail Stripe (carte, factures, résiliation).', 'secondary')}</div>
+      <div class="card"><div class="row"><div class="grow"><p>Visible des clients</p><p class="muted">Votre commerce apparaît dans la recherche et sur votre QR code.</p></div>${sw(S.merchant.published, 'publish')}</div></div>
+      <div class="card"><p class="subtitle">Pause</p>
+        ${S.merchant.paused ? `<p>Pause en cours : plus de nouvelles commandes.</p>${btn('Reprendre les commandes', 'pause', 'off')}` : `<p class="muted">Un rush ? Mettez les commandes en pause.</p><div class="chips">${chip('15 min', 'pause', 'on')}${chip('30 min', 'pause', 'on')}${chip('1 h', 'pause', 'on')}${chip("Jusqu'à réactivation", 'pause', 'on')}</div>`}</div>
+      <div>
+        <div class="listrow" data-a="go" data-v="delivery"><div class="grow"><p>Livraison</p><p class="muted">${S.merchant.delivery ? `Activée · ${fmt(S.merchant.fee)} · zone de ${fmtDist(S.merchant.radius)}` : 'Désactivée'}</p></div>›</div>
+        <div class="listrow" data-a="toast" data-v="Maquette : horaires par jour, passage de minuit géré."><div class="grow"><p>Horaires</p></div>›</div>
+        <div class="listrow" data-a="toast" data-v="Maquette : QR code à imprimer, lien zeroo.online/m/chez-samir."><div class="grow"><p>QR code et lien</p></div>›</div>
+        <div class="listrow" data-a="go" data-v="history"><div class="grow"><p>Historique des commandes</p></div>›</div>
+      </div>` };
+  },
+  delivery() {
+    const m = S.merchant;
+    return { title: 'Livraison', back: true, body: `
+      <div class="card"><div class="row"><div class="grow"><p>Proposer la livraison</p><p class="muted">Vos clients choisissent le retrait ou la livraison par un livreur indépendant rattaché à votre restaurant.</p></div>${sw(m.delivery, 'delivery')}</div></div>
+      <div class="card">
+        <p class="subtitle">Prix de la course</p><p class="muted">Payé par le client directement au livreur. Vous ne payez rien et ne prélevez rien.</p>
+        <div class="chips">${[200, 250, 300, 350, 400, 500].map((c) => chip(fmt(c), 'fee', c, m.fee === c)).join('')}</div>
+        <p class="subtitle">Zone de livraison</p><p class="muted">Distance maximale autour de votre restaurant.</p>
+        <div class="chips">${[1000, 2000, 3000, 5000].map((r) => chip(fmtDist(r), 'radius', r, m.radius === r)).join('')}</div>
+      </div>
+      ${m.lea === 'pending' ? `<p class="subtitle">Demandes de livreurs</p>
+        <div class="card white"><p class="subtitle">Léa Martin</p><p class="muted">Vélo · 06 11 22 33 44 · auto-entrepreneur</p>
+          <div class="row">${btn('Accepter', 'lea', 'approved', 'primary sm')}${btn('Refuser', 'lea', 'rejected', 'ghost sm')}</div></div>` : ''}
+      <p class="subtitle">Vos livreurs</p>
+      <div class="card white"><div class="row between"><p class="subtitle">Karim L.</p>${badge(S.courier.available ? 'Disponible' : 'Indisponible', S.courier.available ? 'ok' : '')}</div><p class="muted">Scooter · 06 12 34 56 78</p>${btn('Retirer', 'toast', 'Maquette : Karim ne recevrait plus vos courses.', 'ghost')}</div>
+      ${m.lea === 'approved' ? `<div class="card white"><div class="row between"><p class="subtitle">Léa Martin</p>${badge('Indisponible')}</div><p class="muted">Vélo · 06 11 22 33 44</p></div>` : ''}` };
+  },
+  history() {
+    const list = [...S.history, S.order].filter((o) => o && !ACTIVE.includes(o.status)).reverse();
+    return { title: 'Historique', back: true, body: `
+      ${list.map((o) => `<div class="card white"><div class="row between"><p><b>${o.code}</b> · Nadia</p>${badge(o.status === 'delivered' ? 'Livrée' : o.status === 'collected' ? 'Récupérée' : o.status === 'refused' ? 'Refusée' : 'Annulée', DONE.includes(o.status) ? 'ok' : 'off')}</div><p class="muted">${o.placedAt} · ${fmt(o.meal)}${o.fulfillment === 'delivery' ? ' · 🛵' : ''}</p></div>`).join('')}
+      <div class="card white"><div class="row between"><p><b>H4TZ</b> · Malik</p>${badge('Récupérée', 'ok')}</div><p class="muted">11:58 · 21,00 €</p></div>
+      <div class="card white"><div class="row between"><p><b>9QPA</b> · Sarah</p>${badge('Livrée', 'ok')}</div><p class="muted">11:32 · 9,50 € · 🛵</p></div>` };
+  },
+  account() {
+    return { body: `
+      <h2 class="title">Mon compte</h2>
+      <p class="muted">Connecté en tant que commercant@zidozid.test</p>
+      ${btn("Passer à l'espace client", 'role', 'client', 'secondary')}
+      ${btn("Passer à l'espace livreur", 'role', 'courier', 'secondary')}
+      ${btn('Se déconnecter', 'toast', 'Maquette : la déconnexion est désactivée.', 'secondary')}` };
+  },
+};
+
+// ---------------------------------------------------------------------------
+// Écrans : livreur
+// ---------------------------------------------------------------------------
+function runCard(o) {
+  const isNew = o.status === 'placed' && !o.confirmed;
+  const label = isNew ? 'Nouvelle course' : { placed: 'Course confirmée', accepted: 'Acceptée', preparing: 'En préparation', ready: 'Prête', out_for_delivery: 'En livraison' }[o.status];
+  let body = '';
+  if (isNew) body = `${btn('Confirmer la course', 'confirm-run')}${btn('Décliner', 'decline-run', '', 'ghost')}`;
+  else if (o.status === 'placed') body = '<p class="muted">Course confirmée. En attente de l’acceptation du restaurant.</p>';
+  else if (o.status === 'out_for_delivery') {
+    body = `<p class="link">En route vers le client.</p>${btn('Itinéraire vers le client', 'toast', 'Ouvre Plans / Google Maps vers l’adresse du client.', 'secondary')}
+      <div class="field"><label>Code de livraison donné par le client</label>
+        <input class="input" data-m="codeInput" data-live="deliver" value="${esc(S.codeInput)}" inputmode="numeric" maxlength="4" placeholder="4 chiffres" style="letter-spacing:4px;font-weight:700" />
+        <button class="fill" data-a="fill-code" data-v="${o.dcode}">Démo : la cliente donne ${o.dcode}</button></div>
+      <div id="deliver-btn">${btn('Valider la livraison', 'deliver', '', 'primary', S.codeInput.length === 4 ? '' : 'disabled')}</div>
+      ${S.codeError ? '<p class="error">Code de livraison incorrect. Demandez au client son code à 4 chiffres.</p>' : ''}`;
+  } else {
+    body = `${o.status === 'ready' ? '<p class="link">Commande prête : rendez-vous au restaurant.</p>' : `<p>Le restaurant prépare la commande, prête vers ${o.readyAt}.</p>`}
+      <div class="card white center" style="padding:10px"><p class="muted">Code de retrait à montrer au restaurant</p><p class="code" style="font-size:32px">${o.code}</p></div>
+      ${btn('Itinéraire vers le restaurant', 'toast', 'Ouvre Plans / Google Maps vers Chez Samir.', 'secondary')}`;
+  }
+  return `<div class="card white">
+    <div class="row between"><p class="subtitle">${label}</p>${badge(`Course : ${fmt(o.fee)}`, isNew ? 'warn' : 'ok')}</div>
+    <p>Retrait : Chez Samir, 12 rue de la Paix, Paris</p>
+    <p>Livraison : ${esc(o.address.line)}, ${o.address.pc} ${o.address.city}</p>
+    <p class="muted">${fmtDist(o.address.dist)} du restaurant · Client : Nadia · ${o.items.reduce((s, l) => s + l.qty, 0)} article(s)</p>
+    ${o.instructions ? `<p class="link">Instructions : ${esc(o.instructions)}</p>` : ''}
+    ${body}
+    ${!isNew ? btn('Appeler le client', 'toast', `Appel vers ${o.phone}.`, 'ghost') : ''}
+  </div>`;
+}
+
+const COURIER = {
+  runs() {
+    const o = S.order && S.order.fulfillment === 'delivery' && ACTIVE.includes(S.order.status) ? S.order : null;
+    return { body: `
+      <h2 class="title">Mes courses</h2>
+      <div class="card"><div class="row"><div class="grow"><p>Je suis disponible</p><p class="muted">Vous recevez les courses des restaurants qui vous ont accepté.</p></div>${sw(S.courier.available, 'available')}</div></div>
+      ${o ? runCard(o) : `<div class="card center"><p class="muted">${S.courier.available ? 'Aucune course en cours. Restez disponible : les nouvelles courses s’affichent ici.' : 'Vous êtes indisponible : aucune course ne vous est proposée.'}</p>
+        ${S.courier.available ? btn('Recevoir une course test', 'test-run', '', 'secondary') : ''}</div>`}
+      <div class="card"><p class="subtitle">Ne manquez aucune course</p><p class="muted">Activez les notifications pour être prévenu de chaque nouvelle course.</p></div>` };
+  },
+  restaurants() {
+    const kebab = S.courier.links.kebab;
+    return { body: `
+      <h2 class="title">Mes restaurants</h2>
+      <p class="muted">Demandez à livrer pour les restaurants de votre secteur. Chaque restaurant accepte ou refuse votre demande.</p>
+      <div class="card white"><div class="row between"><p class="subtitle">Chez Samir</p>${badge('Accepté', 'ok')}</div><p class="muted">Paris · ${S.merchant.delivery ? `Course : ${fmt(S.merchant.fee)} · zone de ${fmtDist(S.merchant.radius)}` : 'Ne livre pas encore'}</p>${btn('Quitter', 'toast', 'Maquette : vous ne recevriez plus ses courses.', 'ghost')}</div>
+      ${kebab ? `<div class="card white"><div class="row between"><p class="subtitle">Le Kebab de Léa</p>${badge('En attente', 'warn')}</div><p class="muted">Lyon · le restaurant doit accepter votre demande.</p></div>` : ''}
+      <div class="field"><label>Trouver un restaurant</label><input class="input" placeholder="Nom, ville ou code postal" value="Kebab" data-a="noop" /></div>
+      ${kebab ? '' : `<div class="card white"><p class="subtitle">Le Kebab de Léa</p><p class="muted">5 Place Bellecour, Lyon</p>${btn('Demander à livrer', 'request-link', '', 'secondary')}</div>`}` };
+  },
+  earnings() {
+    const c = S.courier;
+    return { body: `
+      <h2 class="title">Mes revenus</h2>
+      <div class="tiles">
+        <div class="tile"><span class="muted">Aujourd'hui</span><b>${fmt(c.today)}</b><span class="muted">${c.todayCount} course${c.todayCount > 1 ? 's' : ''}</span></div>
+        <div class="tile"><span class="muted">Semaine</span><b>${fmt(c.week)}</b></div>
+        <div class="tile"><span class="muted">Mois</span><b>${fmt(c.month)}</b><span class="muted">${c.monthCount} courses</span></div>
+      </div>
+      <p class="muted">Le client paie chaque course directement sur votre compte Stripe, sans commission Zidozid. Stripe la verse sur votre compte bancaire.</p>
+      <p class="subtitle">Dernières courses</p>
+      ${(S.order && S.order.status === 'delivered' ? [S.order] : []).concat(S.history.filter((h) => h.status === 'delivered').reverse()).map((o) => `<div class="row between"><span>Chez Samir<br><span class="muted">Aujourd'hui · ${o.address.city}</span></span><span>${fmt(o.fee)}</span></div>`).join('')}
+      <div class="row between"><span>Chez Samir<br><span class="muted">Aujourd'hui · 11:32 · Paris</span></span><span>3,50&nbsp;€</span></div>
+      <div class="row between"><span>Chez Samir<br><span class="muted">Aujourd'hui · 10:58 · Paris</span></span><span>3,50&nbsp;€</span></div>` };
+  },
+  account() {
+    return { body: `
+      <h2 class="title">Mon compte</h2>
+      <p class="muted">Connecté en tant que livreur@zidozid.test</p>
+      <div class="card"><p class="subtitle">Mon profil livreur</p><p>Karim L.</p><p class="muted">Auto-entrepreneur · SIRET 882 123 456 00015</p><p class="muted">Scooter · 06 12 34 56 78</p></div>
+      <div class="card"><p class="subtitle">Paiements</p>${badge('Stripe ✓', 'ok')}<p class="muted">Paiements actifs : vos courses sont versées sur votre compte bancaire. Stripe a vérifié votre identité et votre SIRET.</p></div>
+      <div class="card"><p class="subtitle">Abonnement Zidozid Livreur</p><p>Essai gratuit jusqu'au ${trialEnd}.</p><p class="muted">Après 30 jours d’essai gratuit : Livreur Start 14,99 € HT/mois ou 149,99 € HT/an. Zéro commission ZEROO sur vos courses.</p>${btn('Gérer mon abonnement', 'toast', 'Ouvre le portail Stripe (carte, factures, résiliation).', 'secondary')}</div>
+      ${btn("Passer à l'espace client", 'role', 'client', 'secondary')}
+      ${btn("Passer à l'espace commerçant", 'role', 'merchant', 'secondary')}` };
+  },
+};
+const SCREENS = { client: CLIENT, merchant: MERCHANT, courier: COURIER };
+
+// ---------------------------------------------------------------------------
+// Feuilles modales : produit et paiement Stripe
+// ---------------------------------------------------------------------------
+function itemSheet() {
+  const m = S.modal;
+  const item = findItem(m.id);
+  const extra = item.groups.flatMap((g) => g.options.filter((o) => (m.sel[g.id] || []).includes(o.id)).map((o) => o.p)).reduce((a, b) => a + b, 0);
+  const unit = item.price + extra;
+  const valid = item.groups.every((g) => (m.sel[g.id] || []).length >= g.min);
+  return `<div class="overlay" data-a="close-modal"><div class="sheet" data-stop="1">
+    <div class="grab"></div>
+    <div class="row"><div class="thumb" style="width:54px;height:54px;border-radius:12px;background:#fff1e8;display:grid;place-items:center;font-size:28px">${item.emoji}</div><div class="grow"><p class="subtitle">${item.name}</p><p class="muted">${esc(item.desc)}</p></div></div>
+    ${item.groups.map((g) => {
+      const rule = g.max === 1 ? 'Choisissez-en 1' : g.min === 0 ? `Jusqu'à ${g.max}` : `De ${g.min} à ${g.max}`;
+      return `<div><div class="row between"><p><b>${g.name}</b></p><span class="muted">${rule}${g.min ? ' · obligatoire' : ''}</span></div>
+        ${g.options.map((o) => {
+          const on = (m.sel[g.id] || []).includes(o.id);
+          return `<div class="opt ${on ? 'on' : ''}" data-a="opt" data-v="${g.id}|${o.id}"><span class="box ${g.max === 1 ? 'radio' : ''}">${on ? '✓' : ''}</span><span class="grow">${o.name}</span>${o.p ? `<span class="muted">+ ${fmt(o.p)}</span>` : ''}</div>`;
+        }).join('')}</div>`;
+    }).join('')}
+    <div class="row between"><span>Quantité</span><div class="qty"><button data-a="mqty" data-v="-1">−</button><b>${m.qty}</b><button data-a="mqty" data-v="1">+</button></div></div>
+    ${!valid ? `<p class="muted">Choisissez : ${item.groups.filter((g) => (m.sel[g.id] || []).length < g.min).map((g) => g.name).join(', ')}</p>` : ''}
+    ${btn(`Ajouter · ${fmt(unit * m.qty)}`, 'add-item', '', 'primary', valid ? '' : 'disabled')}
+  </div></div>`;
+}
+
+function paySheet() {
+  const m = S.modal;
+  const p = m.steps[m.i];
+  return `<div class="overlay"><div class="sheet" data-stop="1">
+    <div class="grab"></div>
+    <div class="row between"><span class="stripe">stripe</span><span class="muted">Paiement ${m.i + 1}/${m.steps.length}</span></div>
+    <p class="muted">${p.kind === 'meal' ? 'Votre repas, payé directement au restaurant' : 'Votre livraison, payée directement au livreur'}</p>
+    <p class="subtitle">${p.who}</p>
+    <p class="amount">${fmt(p.amount)}</p>
+    ${btn('Payer avec Apple Pay', 'pay-step', '', 'dark')}
+    <p class="muted center" style="text-align:center">ou payer par carte</p>
+    <div class="cardline"><span class="brand">VISA</span><span class="grow">•••• 4242</span><span class="muted">12/28</span></div>
+    ${btn(`Payer ${fmt(p.amount)}`, 'pay-step')}
+    <p class="small">Montant seulement autorisé : vous n'êtes débité que si le restaurant accepte la commande. Aucune commission Zidozid.</p>
+    ${btn('Annuler', 'pay-cancel', '', 'ghost')}
+  </div></div>`;
+}
+
+// ---------------------------------------------------------------------------
+// Démo guidée
+// ---------------------------------------------------------------------------
+function nextStep() {
+  const o = S.order;
+  if (!o || !ACTIVE.includes(o.status)) {
+    const done = o && DONE.includes(o.status);
+    return {
+      text: done
+        ? `Commande ${o.fulfillment === 'delivery' ? 'livrée' : 'récupérée'} ! Les menus formules sont ajoutés à la carte de fidélité${o.fulfillment === 'delivery' ? ' et la course aux revenus du livreur' : ''}. Recommencez, en livraison ou à emporter.`
+        : 'Client : ouvrez « Chez Samir », ajoutez un menu, puis dans le panier choisissez « À emporter » ou « 🛵 Livraison » et payez.',
+      role: 'client',
+    };
+  }
+  const d = o.fulfillment === 'delivery';
+  if (o.status === 'placed' && d && !o.confirmed) return { text: 'Livreur : Karim reçoit « Nouvelle course ». Confirmez-la (ou déclinez : la commande est annulée, rien n’est débité).', role: 'courier' };
+  if (o.status === 'placed') return { text: 'Restaurant : choisissez le délai et acceptez. Les paiements sont alors débités (repas, et course pour une livraison).', role: 'merchant' };
+  if (o.status === 'accepted' || o.status === 'preparing') return { text: `Restaurant : lancez la préparation puis « Commande prête ».${!d ? ' Côté client, essayez « Je pars maintenant ».' : ''}`, role: 'merchant' };
+  if (o.status === 'ready' && !d) return { text: `Restaurant : le client montre son code ${o.code} au comptoir. Saisissez-le pour remettre la commande.`, role: 'merchant' };
+  if (o.status === 'ready') return { text: `Restaurant : Karim montre le code de retrait ${o.code}. Saisissez-le et « Remettre au livreur ».`, role: 'merchant' };
+  return { text: `Livreur : saisissez le code de livraison que la cliente lui donne (${o.dcode}) et validez.`, role: 'courier' };
+}
+
+function renderSide() {
+  document.getElementById('roles').innerHTML = Object.entries(ROLES).map(([k, r]) => {
+    const n = S.notifs[k].length;
+    return `<button class="role ${S.role === k ? 'on' : ''}" data-a="role" data-v="${k}"><span class="ico">${r.icon}</span><span><b>${r.name}</b><small>${r.who}</small></span>${n ? `<span class="dot">${n}</span>` : ''}</button>`;
+  }).join('');
+  const step = nextStep();
+  document.getElementById('guide').innerHTML = `<h2>Démo guidée</h2>
+    <div class="guide-step"><b>Étape suivante</b>${step.text}</div>
+    ${step.role !== S.role ? `<div style="margin-top:10px">${btn(`Passer côté ${ROLES[step.role].name.toLowerCase()} ${ROLES[step.role].icon}`, 'role', step.role, 'primary')}</div>` : ''}
+    <div style="margin-top:8px">${btn('Recommencer la démo', 'reset', '', 'ghost')}</div>`;
+}
+
+// ---------------------------------------------------------------------------
+// Rendu
+// ---------------------------------------------------------------------------
+let lastKey = '';
+function render() {
+  renderSide();
+  const phone = document.getElementById('phone');
+  const current = phone.querySelector('.content');
+  const key = `${S.role}:${stack().length}:${currentScreen().s}`;
+  const scroll = current && key === lastKey ? current.scrollTop : 0;
+  const t = currentScreen();
+  const screen = SCREENS[S.role][t.s](t);
+  const isRoot = stack().length === 1;
+  phone.innerHTML = `
+    <div class="statusbar"><span>9:41</span><span class="notch"></span><span>📶 🔋</span></div>
+    ${screen.title && !isRoot ? `<div class="header"><button class="back" data-a="back" aria-label="Retour">‹</button><h3>${screen.title}</h3></div>` : ''}
+    <div class="content">${screen.body}</div>
+    ${isRoot ? `<nav class="tabbar">${TABS[S.role].map(([id, ic, l]) => `<button class="tab ${t.s === id ? 'on' : ''}" data-a="tab" data-v="${id}"><span>${ic}</span>${l}</button>`).join('')}</nav>` : ''}
+    ${S.modal?.type === 'item' ? itemSheet() : ''}
+    ${S.modal?.type === 'pay' ? paySheet() : ''}
+    ${S.banner ? `<div class="banner"><div class="grow"><small>ZIDOZID · maintenant</small><b>${esc(S.banner.title)}</b><span class="muted" style="font-size:13px">${esc(S.banner.body)}</span></div></div>` : ''}
+    ${S.toast ? `<div class="toast">${esc(S.toast)}</div>` : ''}`;
+  phone.querySelector('.content').scrollTop = scroll;
+  lastKey = key;
+  if (S.banner) { const b = S.banner; setTimeout(() => { if (S.banner === b) { S.banner = null; render(); } }, 4200); }
+  if (S.toast) { const m = S.toast; setTimeout(() => { if (S.toast === m) { S.toast = null; render(); } }, 2800); }
+}
+
+// ---------------------------------------------------------------------------
+// Commande : création et évolution
+// ---------------------------------------------------------------------------
+function placeOrder() {
+  const discount = cartDiscount();
+  const delivery = isDelivery();
+  const reward = discount > 0;
+  if (S.order) S.history.push(S.order);
+  const loyaltyQty = S.cart.filter((l) => l.loyalty).reduce((s, l) => s + l.qty, 0);
+  if (reward) S.loyalty.rewards -= 1;
+  S.order = {
+    id: 'o' + Date.now(), code: randomCode(), dcode: String(1000 + Math.floor(Math.random() * 9000)),
+    items: S.cart.map((l) => ({ ...l })), discount, meal: cartSub() - discount, fee: delivery ? S.merchant.fee : 0,
+    fulfillment: delivery ? 'delivery' : 'pickup', status: 'placed', confirmed: false, readyAt: null,
+    address: delivery ? { ...S.address } : null, phone: S.phone.trim(), instructions: S.instructions.trim(), note: S.note.trim(),
+    placedAt: time(new Date()), reward, earned: loyaltyQty - (reward ? 1 : 0),
+  };
+  S.cart = []; S.rewardKey = null; S.note = ''; S.departure = null;
+  notify('merchant', delivery ? 'Nouvelle commande à livrer 🛵' : 'Nouvelle commande 🔔', `Nadia · ${fmt(S.order.meal)}${reward ? ' · menu offert' : ''}`);
+  if (delivery) notify('courier', 'Nouvelle course 🛵', `Chez Samir → ${S.order.address.city} · ${fmt(S.order.fee)}. Confirmez la course.`);
+}
+function finishOrder(status) {
+  const o = S.order;
+  o.status = status;
+  S.loyalty.count += o.earned;
+  while (S.loyalty.count >= 9) { S.loyalty.count -= 9; S.loyalty.rewards += 1; }
+  if (status === 'delivered') {
+    const c = S.courier; c.today += o.fee; c.todayCount += 1; c.week += o.fee; c.month += o.fee; c.monthCount += 1;
+  }
+}
+function failOrder(status, extra = {}) {
+  Object.assign(S.order, { status }, extra);
+  if (S.order.reward) S.loyalty.rewards += 1; // le menu offert est rendu
+}
+function testOrder(delivery) {
+  const item = findItem('americain');
+  S.cart = [{ key: 'americain|', id: 'americain', name: item.name, opts: [], unit: 950, base: 950, qty: 2, loyalty: true }];
+  if (delivery) { S.fulfillment = 'delivery'; S.address = ADDRESSES[0]; S.addrQuery = '5 Rue Saint-Augustin, 75002 Paris'; S.phone = '06 98 76 54 32'; }
+  else S.fulfillment = 'pickup';
+  placeOrder();
+}
+
+// ---------------------------------------------------------------------------
+// Actions
+// ---------------------------------------------------------------------------
+const A = {
+  noop() {},
+  toast(v) { toast(v); },
+  role(v) { setRole(v); },
+  reset() { S = initialState(); },
+  tab(v) { S.stacks[S.role] = [{ s: v }]; S.refusing = false; },
+  back() { if (stack().length > 1) stack().pop(); },
+  go(v) { push(v); },
+  'open-merchant'() { if (S.role !== 'client') setRole('client'); S.stacks.client = [{ s: 'explore' }, { s: 'merchant' }]; },
+  'open-order'(v) { push('order', { id: v }); },
+  'open-item'(v) { S.modal = { type: 'item', id: v, sel: {}, qty: 1 }; },
+  'close-modal'(v, el, e) { if (!e.target.closest('[data-stop]')) S.modal = null; },
+  opt(v) {
+    const [gid, oid] = v.split('|');
+    const g = findItem(S.modal.id).groups.find((x) => x.id === gid);
+    const cur = S.modal.sel[gid] || [];
+    if (g.max === 1) S.modal.sel[gid] = [oid];
+    else if (cur.includes(oid)) S.modal.sel[gid] = cur.filter((x) => x !== oid);
+    else if (cur.length < g.max) S.modal.sel[gid] = [...cur, oid];
+  },
+  mqty(v) { S.modal.qty = Math.max(1, Math.min(20, S.modal.qty + Number(v))); },
+  'add-item'() {
+    const m = S.modal; const item = findItem(m.id);
+    const chosen = item.groups.flatMap((g) => g.options.filter((o) => (m.sel[g.id] || []).includes(o.id)).map((o) => ({ g: g.id, ...o })));
+    const key = [item.id, ...chosen.map((o) => `${o.g}:${o.id}`).sort()].join('|');
+    const unit = item.price + chosen.reduce((s, o) => s + o.p, 0);
+    const existing = S.cart.find((l) => l.key === key);
+    if (existing) existing.qty += m.qty;
+    else S.cart.push({ key, id: item.id, name: item.name, opts: chosen.map((o) => o.name), unit, base: item.price, qty: m.qty, loyalty: item.loyalty });
+    S.modal = null; toast(`${item.name} ajouté au panier`);
+  },
+  qty(v) {
+    const [key, d] = v.split('|');
+    const l = S.cart.find((x) => x.key === key); l.qty += Number(d);
+    if (l.qty <= 0) { S.cart = S.cart.filter((x) => x !== l); if (S.rewardKey === key) S.rewardKey = null; }
+  },
+  reward(v) { S.rewardKey = S.rewardKey === v ? null : v; },
+  fulfillment(v) { S.fulfillment = v; },
+  'pick-addr'(v) { S.address = ADDRESSES.find((a) => a.id === v); S.addrQuery = `${S.address.line}, ${S.address.pc} ${S.address.city}`; },
+  'fill-addr'() { A['pick-addr']('a1'); },
+  'fill-phone'() { S.phone = '06 98 76 54 32'; },
+  pay() {
+    if (!canPay()) return;
+    const meal = cartSub() - cartDiscount();
+    const steps = [];
+    if (meal > 0) steps.push({ kind: 'meal', who: 'Chez Samir', amount: meal });
+    if (isDelivery()) steps.push({ kind: 'delivery', who: 'Karim L., livreur', amount: S.merchant.fee });
+    if (!steps.length) { placeOrder(); S.stacks.client = [{ s: 'orders' }, { s: 'order', id: 'current' }]; toast('Commande envoyée : menu offert, rien à payer.'); return; }
+    S.modal = { type: 'pay', steps, i: 0 };
+  },
+  'pay-step'() {
+    const m = S.modal;
+    if (m.i < m.steps.length - 1) { m.i += 1; toast('Repas autorisé. Deuxième paiement : la course.'); return; }
+    S.modal = null; placeOrder();
+    S.stacks.client = [{ s: 'orders' }, { s: 'order', id: 'current' }];
+    toast('Commande envoyée au restaurant');
+  },
+  'pay-cancel'() { S.modal = null; toast("Paiement annulé : aucun montant n'a été débité. Votre panier est conservé."); },
+  'client-cancel'() {
+    failOrder('cancelled', { cancelledBy: 'customer' });
+    notify('merchant', 'Commande annulée', `Nadia a annulé sa commande ${S.order.code}.`);
+    if (S.order.fulfillment === 'delivery') notify('courier', 'Course annulée', `Le client a annulé la commande ${S.order.code}.`);
+    toast('Commande annulée, rien n’a été débité.');
+  },
+  depart(v) { S.departure = { eta: inMinutes(Number(v)) }; notify('merchant', 'Nadia est en route 🚶', `Arrivée vers ${S.departure.eta} · commande ${S.order.code}`); },
+
+  // Restaurant
+  prep(v) { S.merchant.prep = Number(v); },
+  accept() {
+    const o = S.order; o.status = 'accepted'; o.readyAt = inMinutes(S.merchant.prep);
+    notify('client', 'Commande acceptée ✅', o.fulfillment === 'delivery' ? 'Chez Samir prépare votre commande, Karim la livrera.' : `Chez Samir prépare votre commande, prête vers ${o.readyAt}.`);
+    if (o.fulfillment === 'delivery') notify('courier', 'Course confirmée', `Chez Samir prépare la commande ${o.code}, prête vers ${o.readyAt}.`);
+    toast(o.fulfillment === 'delivery' ? 'Acceptée : repas et course débités.' : 'Acceptée : paiement débité.');
+  },
+  refusing() { S.refusing = !S.refusing; },
+  refuse(v) {
+    failOrder('refused', { reason: v }); S.refusing = false;
+    notify('client', 'Commande non acceptée', `Chez Samir n’a pas pu accepter votre commande (${v}). Vous n’avez pas été débité.`);
+    if (S.order.fulfillment === 'delivery') notify('courier', 'Course annulée', `Chez Samir n’a pas accepté la commande ${S.order.code}.`);
+    toast('Commande refusée : aucun débit pour le client.');
+  },
+  mstatus(v) {
+    S.order.status = v;
+    if (v === 'ready') {
+      if (S.order.fulfillment === 'delivery') notify('courier', 'Commande prête 📦', `Récupérez la commande ${S.order.code} chez Chez Samir.`);
+      else notify('client', 'C’est prêt ! 🎉', `Votre commande vous attend. Code de retrait : ${S.order.code}`);
+    }
+  },
+  'fill-code'(v) { S.codeInput = v; S.codeError = false; },
+  handover() {
+    const o = S.order;
+    if (S.codeInput.trim().toUpperCase() !== o.code) { toast('Code de retrait incorrect.'); return; }
+    S.codeInput = '';
+    if (o.fulfillment === 'delivery') {
+      o.status = 'out_for_delivery';
+      notify('client', 'En route 🛵', `Karim arrive avec votre commande. Code de livraison à lui donner : ${o.dcode}`);
+      toast('Commande remise au livreur.');
+    } else {
+      finishOrder('collected'); toast('Commande remise. Fidélité créditée.');
+    }
+  },
+  stock(v) { S.unavailable[v] = !S.unavailable[v]; },
+  publish() { S.merchant.published = !S.merchant.published; },
+  pause(v) { S.merchant.paused = v === 'on'; },
+  delivery() { S.merchant.delivery = !S.merchant.delivery; },
+  fee(v) { S.merchant.fee = Number(v); },
+  radius(v) { S.merchant.radius = Number(v); },
+  lea(v) { S.merchant.lea = v; toast(v === 'approved' ? 'Léa est acceptée : elle recevra vos courses.' : 'Demande refusée.'); },
+  'test-order'() { testOrder(false); S.notifs.merchant = []; toast('Commande test reçue (à emporter).'); },
+
+  // Livreur
+  available() {
+    if (S.courier.available && courierBusy()) { toast('Terminez d’abord la course en cours.'); return; }
+    S.courier.available = !S.courier.available;
+  },
+  'test-run'() { testOrder(true); S.notifs.courier = []; toast('Course test reçue : Nadia commande 2 menus en livraison.'); },
+  'confirm-run'() { S.order.confirmed = true; toast('Course confirmée. Le restaurant peut accepter.'); },
+  'decline-run'() {
+    failOrder('cancelled', { cancelledBy: 'courier' });
+    notify('client', 'Livraison impossible', 'Aucun livreur n’a pu prendre votre commande chez Chez Samir. Vous n’avez pas été débité.');
+    notify('merchant', 'Commande annulée', `Le livreur a décliné la commande ${S.order.code}.`);
+    toast('Course déclinée : la commande est annulée, rien n’est débité.');
+  },
+  deliver() {
+    if (S.codeInput.trim() !== S.order.dcode) { S.codeError = true; return; }
+    S.codeInput = ''; S.codeError = false; finishOrder('delivered');
+    notify('client', 'Commande livrée 🎉', 'Bon appétit ! Merci d’avoir commandé chez Chez Samir.');
+    toast(`Livrée ! ${fmt(S.order.fee)} ajoutés à vos revenus.`);
+  },
+  'request-link'() { S.courier.links.kebab = 'pending'; toast('Demande envoyée au Kebab de Léa.'); },
+};
+
+// Clics : un seul écouteur, actions déclarées par data-a / data-v.
+document.addEventListener('click', (e) => {
+  const el = e.target.closest('[data-a]');
+  if (!el || el.disabled) return;
+  const a = el.dataset.a;
+  if (a === 'close-modal' && e.target.closest('[data-stop]') && !e.target.closest('[data-stop] [data-a]')) return;
+  if (el.closest('[data-stop]') && a === 'close-modal') return;
+  if (a === 'noop') return;
+  A[a]?.(el.dataset.v, el, e);
+  render();
+});
+
+// Saisie : met l'état à jour sans tout redessiner (le curseur reste dans le champ).
+document.addEventListener('input', (e) => {
+  const m = e.target.dataset.m;
+  if (!m) return;
+  S[m] = m === 'codeInput' ? e.target.value.toUpperCase() : e.target.value;
+  const live = e.target.dataset.live;
+  if (live === 'addr') {
+    if (S.address && S.addrQuery !== `${S.address.line}, ${S.address.pc} ${S.address.city}`) S.address = null;
+    document.getElementById('addr-sugg').innerHTML = addrSuggestions();
+    document.getElementById('pay-btn').innerHTML = payButton();
+  }
+  if (live === 'pay') document.getElementById('pay-btn').innerHTML = payButton();
+  if (live === 'handover') document.getElementById('handover-btn').innerHTML = btn(S.order.fulfillment === 'delivery' ? 'Remettre au livreur' : 'Remise au client', 'handover', '', 'primary', S.codeInput.length === 4 ? '' : 'disabled');
+  if (live === 'deliver') { S.codeError = false; document.getElementById('deliver-btn').innerHTML = btn('Valider la livraison', 'deliver', '', 'primary', S.codeInput.length === 4 ? '' : 'disabled'); }
+});
+
+render();
+</script>
+</body>
+</html>

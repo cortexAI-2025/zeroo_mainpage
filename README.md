@@ -1,21 +1,56 @@
-# Zeroo — mainpage
+# zeroo_mainpage
 
-Site vitrine français, responsive et statique pour le concept Zeroo : click-and-collect sans commission, abonnement commerçant et fidélité client.
+Site web **zeroo.online** : la page d'accueil de Zidozid, à emporter ou livré, sans commission.
+L'application (iOS, Android, web) est dans un autre dépôt : `cortexAI-2025/zidozid`.
 
-## Contenu
-- Présentation du concept et parcours client
-- Carte interactive de démonstration (aucune commande réelle)
-- Simulateur de commissions comparées (ne représente pas une économie nette)
-- Présentation restaurateurs, fidélité, FAQ et contact par e-mail
-- Métadonnées SEO, données structurées, robots.txt, llms.txt et favicon
+Le site est en HTML et CSS : pas de cookie, aucune ressource externe (polices système). Seule la démo (`/demo/`) contient du JavaScript, intégré au fichier.
 
-## Utilisation
-Servir ce dossier avec un serveur statique, ou ouvrir index.html. Aucun build ni dépendance, aucune requête externe, aucun stockage ni analytics.
+| Fichier | Contenu |
+|---|---|
+| `index.html` | Page d'accueil |
+| `mentions-legales/index.html` | Mentions légales |
+| `confidentialite/index.html` | Politique de confidentialité |
+| `demo/index.html` | Démo interactive de l'application (client, restaurant, livreur), fichier autonome |
+| `404.html` | Page introuvable |
+| `style.css` | Mise en forme (couleurs de la marque, fond blanc permanent) |
+| `img/`, `favicon.png`, `apple-touch-icon.png` | Logo et icônes |
+| `og-image.png` | Image affichée quand on partage le lien (WhatsApp, Facebook…) |
+| `sitemap.xml`, `robots.txt`, `llms.txt` | Référencement (moteurs de recherche et assistants IA) |
+| `CNAME` | Domaine personnalisé pour GitHub Pages |
 
-## Déploiement
-Copier index.html, style.css, app.js, favicon.svg, robots.txt et llms.txt dans la racine web de l’hébergeur (IONOS ou équivalent). Aucun domaine ni hébergement n’est configuré dans ce dépôt.
+Les boutons ouvrent un e-mail prérempli vers `contact@aiworkpay.fr`.
 
-## Avant lancement commercial
-Confirmer le tarif, les modalités de paiement et de fidélité, l’URL de l’application, le domaine et les informations juridiques de l’éditeur. Le site n’annonce pas de disponibilité commerciale ni de prix non validés. Identité visuelle proposée, à remplacer par les assets officiels si disponibles.
+## Modifier le site
 
-Le dépôt de l’application cortexAI-2025/ZEROO n’est pas modifié.
+- Modifiez les fichiers puis poussez sur `main` : le site est republié automatiquement en une minute environ.
+- Pour l'essayer en local : `npx serve .`
+- Après une modification de `style.css`, changez le numéro `?v=` dans les pages pour que les navigateurs rechargent la feuille de style.
+- La FAQ de l'accueil est aussi décrite dans les données structurées (`FAQPage`, en haut de `index.html`) : gardez les deux identiques.
+
+## Mise en ligne (une seule fois)
+
+1. **GitHub** → Settings → Pages :
+   - Source : « GitHub Actions » ;
+   - lancez le workflow « Publier zeroo.online » (onglet Actions → Run workflow) ;
+   - Custom domain : `zeroo.online` ;
+   - une fois le certificat émis (quelques minutes à 24 h), cochez « Enforce HTTPS ».
+2. **Recommandé** : vérifiez le domaine dans les paramètres de votre compte GitHub (Settings → Pages → Add a domain). GitHub demande d'ajouter un enregistrement TXT chez IONOS. Cela empêche un autre compte GitHub d'utiliser zeroo.online.
+3. **IONOS** → Domaines & SSL → zeroo.online → DNS. Supprimez les enregistrements A, AAAA et CNAME existants pour `@` et `www` (page de parking IONOS), puis ajoutez ceux-ci :
+
+| Type | Nom d'hôte | Valeur |
+|---|---|---|
+| A | @ | 185.199.108.153 |
+| A | @ | 185.199.109.153 |
+| A | @ | 185.199.110.153 |
+| A | @ | 185.199.111.153 |
+| AAAA | @ | 2606:50c0:8000::153 |
+| AAAA | @ | 2606:50c0:8001::153 |
+| AAAA | @ | 2606:50c0:8002::153 |
+| AAAA | @ | 2606:50c0:8003::153 |
+| CNAME | www | cortexai-2025.github.io |
+
+Ne touchez pas aux enregistrements MX, qui servent à l'e-mail.
+
+4. **IONOS** : créez la boîte mail (ou une redirection) `contact@aiworkpay.fr`.
+
+**Vérifier** : `dig +short zeroo.online` renvoie les 4 adresses GitHub, https://zeroo.online affiche la page, et https://www.zeroo.online y redirige.
