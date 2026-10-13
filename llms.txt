@@ -7,8 +7,8 @@ Service en préparation. Ce site présente le service, propose une démo interac
 
 ## Fonctionnement
 - Le client choisit le retrait sur place ou la livraison, selon les livreurs rattachés au restaurant. Il ne paie aucun frais : le prix de la carte, plus la livraison le cas échéant.
-- Paiements directs : le client paie le restaurant et le livreur sur leur propre compte bancaire (virement instantané vers leur IBAN, ou leur lien de paiement : carte, Apple Pay, Google Pay), ou en espèces. Le restaurant et le livreur confirment la réception dans l'application. En livraison, deux paiements séparés : le repas au restaurant (après acceptation de la commande), la livraison au livreur (après acceptation de la mission). Le prix de la livraison est fixé par le restaurant et affiché avant la commande.
-- Retrait : repas payé par virement ou lien de paiement, ou au comptoir si le restaurant l'accepte.
+- Paiements directs : le client paie le restaurant et le livreur sur leur propre compte bancaire (par carte, Apple Pay ou Google Pay via le lien de paiement de chaque professionnel : SumUp, PayPal, Stripe…), ou en espèces. Le restaurant et le livreur confirment la réception dans l'application. En livraison, deux paiements séparés : le repas au restaurant (après acceptation de la commande), la livraison au livreur (après acceptation de la mission). Le prix de la livraison est fixé par le restaurant et affiché avant la commande.
+- Retrait : repas payé par carte via le lien du restaurant, ou au comptoir si le restaurant l'accepte.
 - Missions : proposées à tous les livreurs rattachés au restaurant, le premier qui accepte la prend ; 2 livraisons simultanées au plus par livreur.
 - ZeeRoo n'encaisse jamais l'argent des commandes ; aucune commission pour les restaurants et les livreurs. Stripe sert uniquement au paiement des abonnements ZeeRoo (AiWorkPay).
 - Avis : le client note le restaurant et le livreur après la commande.
