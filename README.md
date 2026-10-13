@@ -1,30 +1,30 @@
 # zeroo_mainpage
 
-Site web **zeroo.online** : la page d'accueil de Zidozid, à emporter ou livré, sans commission.
-L'application (iOS, Android, web) est dans un autre dépôt : `cortexAI-2025/zidozid`.
+Site web **zeroo.online** : la page d'accueil de ZeeRoo, à emporter ou livré, sans commission.
+L'application (iOS, Android, web) est dans un autre dépôt : `cortexAI-2025/ZEROO`.
 
-Le site est en HTML et CSS : pas de cookie, aucune ressource externe (polices système). Seule la démo (`/demo/`) contient du JavaScript, intégré au fichier.
+Le site est en HTML et CSS, sans cookie. Polices Outfit et Figtree (Google Fonts). JavaScript : le calculateur de l'accueil (`home.js`), le diagnostic et la démo.
 
 | Fichier | Contenu |
 |---|---|
-| `index.html` | Page d'accueil |
-| `mentions-legales/index.html` | Mentions légales |
-| `confidentialite/index.html` | Politique de confidentialité |
-| `demo/index.html` | Démo interactive de l'application (client, restaurant, livreur), fichier autonome |
-| `404.html` | Page introuvable |
-| `style.css` | Mise en forme (couleurs de la marque, fond blanc permanent) |
-| `img/`, `favicon.png`, `apple-touch-icon.png` | Logo et icônes |
+| `index.html` | Page d'accueil, avec la démo intégrée en haut de page |
+| `home.css`, `home.js` | Mise en forme du site, calculateur de commission |
+| `demo/index.html` | Démo interactive de l'application (client, restaurant, livreur), fichier autonome. `?embed` masque le logo pour l'intégration dans l'accueil |
+| `demo.html` | Ancienne adresse de la démo, redirige vers `/demo/` |
+| `diagnostic.html`, `diagnostic.css`, `diagnostic.js` | Diagnostic restaurant ou livreur |
+| `mentions-legales/index.html`, `confidentialite/index.html`, `404.html` | Pages légales, page introuvable. `404.html` redirige les liens de l'app (`/m/<slug>` des QR codes, `/pro`, `/livreur`, `/order/…`) vers l'app web **app.zeroo.online** |
+| `img/zeeroo-logo*.png`, `favicon.png`, `apple-touch-icon.png` | Logo et icônes |
 | `og-image.png` | Image affichée quand on partage le lien (WhatsApp, Facebook…) |
 | `sitemap.xml`, `robots.txt`, `llms.txt` | Référencement (moteurs de recherche et assistants IA) |
 | `CNAME` | Domaine personnalisé pour GitHub Pages |
 
-Les boutons ouvrent un e-mail prérempli vers `contact@aiworkpay.fr`.
+La démo vient du dépôt de l'application (`docs/maquette`, `python3 docs/maquette/build.py`) : copiez le fichier généré dans `demo/index.html` en gardant l'en-tête `<!doctype html>…` de ce dépôt.
 
 ## Modifier le site
 
 - Modifiez les fichiers puis poussez sur `main` : le site est republié automatiquement en une minute environ.
 - Pour l'essayer en local : `npx serve .`
-- Après une modification de `style.css`, changez le numéro `?v=` dans les pages pour que les navigateurs rechargent la feuille de style.
+- Après une modification de `home.css` ou `home.js`, changez le numéro `?v=` dans les pages pour que les navigateurs les rechargent.
 - La FAQ de l'accueil est aussi décrite dans les données structurées (`FAQPage`, en haut de `index.html`) : gardez les deux identiques.
 
 ## Mise en ligne (une seule fois)

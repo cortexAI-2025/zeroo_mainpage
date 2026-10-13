@@ -3,19 +3,28 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Page introuvable · Zidozid</title>
+    <title>Page introuvable · ZeeRoo</title>
     <meta name="robots" content="noindex" />
+    <script>
+      // Liens commerçant des QR codes (zeroo.online/m/<slug>) et pages de l'app : vers l'app web.
+      (function () {
+        var p = location.pathname;
+        if (/^\/(m|pro|livreur|order)\//.test(p) || p === '/pro' || p === '/livreur') {
+          location.replace('https://app.zeroo.online' + p + location.search + location.hash);
+        }
+      })();
+    </script>
     <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="stylesheet" href="/style.css?v=20261010-crop" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Figtree:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="/home.css?v=20261013" />
   </head>
   <body>
-    <main class="wrap hero">
-      <picture>
-        <span class="brand-crop"><img class="logo" src="/img/logo-20261010.jpg" width="480" height="262" alt="Zidozid" /></span>
-      </picture>
+    <main class="wrap notfound">
+      <img src="/img/zeeroo-logo.png" alt="ZeeRoo" width="312" height="80" />
       <h1>Page introuvable</h1>
       <p class="lead">Cette adresse n’existe pas ou plus.</p>
-      <div class="actions"><a class="btn btn-primary" href="/">Retour à l’accueil</a></div>
+      <a class="btn primary" href="/">Retour à l’accueil</a>
     </main>
   </body>
 </html>
