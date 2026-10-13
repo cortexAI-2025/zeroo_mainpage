@@ -9,6 +9,7 @@
       // Liens commerçant des QR codes (zeroo.online/m/<slug>) et pages de l'app : vers l'app web.
       (function () {
         var p = location.pathname;
+        if (p === '/demo.html' || p === '/demo') return location.replace('/demo/' + location.search);
         if (/^\/(m|pro|livreur|order)\//.test(p) || p === '/pro' || p === '/livreur') {
           location.replace('https://app.zeroo.online' + p + location.search + location.hash);
         }
