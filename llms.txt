@@ -1,32 +1,37 @@
-# zidozid — Click & Collect / Delivery
+# ZeeRoo : à emporter ou livré, sans commission
 
-> Site officiel de présentation de Zidozid, service de commande à emporter et de livraison indépendante, exploité par AIWorkPay. Langue : français.
+> Site officiel de présentation de ZeeRoo, application de commande dans les restaurants de quartier (retrait sur place ou livraison par des livreurs indépendants), éditée par AiWorkPay. Langue : français.
 
 ## État du service
-Service en préparation. Ce site vitrine permet uniquement de demander des informations et de se préinscrire par e-mail. Il ne crée pas de compte, ne prend pas de commande et ne facture aucun abonnement. Aucun endpoint de commande ou de paiement n’est proposé ici.
+Service en préparation. Ce site présente le service, propose une démo interactive fictive et un diagnostic pour les restaurants et les livreurs. Il ne crée pas de compte, ne prend pas de commande et ne facture aucun abonnement.
 
-## Fonctionnement et tarifs annoncés
-- Le client choisit le retrait sur place ou la livraison, selon la disponibilité des livreurs rattachés au restaurant.
-- Livraison : deux paiements séparés, le repas au restaurant et la course au livreur ; le prix de la course est fixé par le restaurant et affiché avant validation.
-- Le client paie le repas au restaurant et le tarif de livraison au livreur ; le restaurant ne rémunère pas le livreur.
-- Zéro commission Zidozid pour les restaurants et les livreurs. Les éventuels frais du prestataire de paiement restent distincts.
-- 30 jours d’essai gratuit pour restaurants et livreurs.
-- Livreur Start : 14,99 EUR HT/mois ou 149,99 EUR HT/an.
-- Restaurant Start : 19,99 EUR HT/mois ou 199,99 EUR HT/an.
-- Restaurant Pro multisite : 29,99 EUR HT/mois ou 299,99 EUR HT/an.
-- Zéro commission ZEROO ; frais de paiement éventuels distincts.
-- Livreurs : auto-entrepreneur ou société, SIRET et justificatif d’immatriculation adapté au statut ou Kbis avant activation.
-- Rattachement aux restaurants avec leur accord. Espace livreur prévu : disponibilités, courses, suivi, revenus et abonnement.
+## Fonctionnement
+- Le client choisit le retrait sur place ou la livraison, selon les livreurs rattachés au restaurant. Il ne paie aucun frais : le prix de la carte, plus la livraison le cas échéant.
+- Livraison : deux paiements séparés. Le repas est payé au restaurant (débité quand le restaurant accepte la commande) ; la livraison est payée au livreur quand un livreur accepte la mission, par carte ou en espèces. Le prix de la livraison est fixé par le restaurant et affiché avant la commande.
+- Retrait : repas payé en ligne, ou en espèces au comptoir si le restaurant l'accepte.
+- Missions : proposées à tous les livreurs rattachés au restaurant, le premier qui accepte la prend ; 2 livraisons simultanées au plus par livreur.
+- ZeeRoo n'encaisse jamais l'argent des commandes ; aucune commission pour les restaurants et les livreurs. Frais du prestataire de paiement par carte distincts.
+- Avis : le client note le restaurant et le livreur après la commande.
+- Fidélité : 9 menus achetés chez un restaurant, le 10e est offert par ce restaurant.
+- Livreurs : auto-entrepreneur ou société, SIRET vérifié ; rattachement aux restaurants avec leur accord.
+
+## Tarifs (30 jours d'essai gratuit, prix HT, TVA 20 % en sus)
+- Restaurant Start (retrait) : 19,99 EUR HT/mois ou 199,99 EUR HT/an.
+- Restaurant Pro (retrait et option livraison) : 29,99 EUR HT/mois ou 299,99 EUR HT/an.
+- Livreur : 14,99 EUR HT/mois ou 149,99 EUR HT/an.
 
 ## Pages de référence
 - [Accueil](https://zeroo.online/)
-- [Démo interactive de l’application](https://zeroo.online/demo/)
-- [Livraison : qui paie quoi](https://zeroo.online/#paiement)
+- [Démo interactive de l'application](https://zeroo.online/demo/)
+- [Comment ça marche](https://zeroo.online/#concept)
+- [Qui paie quoi](https://zeroo.online/#paiement)
+- [Restaurateurs](https://zeroo.online/#restaurants)
 - [Livreurs](https://zeroo.online/#livreurs)
 - [Tarifs](https://zeroo.online/#tarif)
 - [Questions fréquentes](https://zeroo.online/#faq)
+- [Diagnostic restaurant ou livreur](https://zeroo.online/diagnostic.html)
 - [Mentions légales](https://zeroo.online/mentions-legales/)
 - [Confidentialité](https://zeroo.online/confidentialite/)
 
 ## Contact
-contact@aiworkpay.fr — informations et préinscriptions.
+contact@aiworkpay.fr
