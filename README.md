@@ -10,9 +10,8 @@ Le site est en HTML et CSS, sans cookie. Polices Outfit et Figtree (Google Fonts
 | `index.html` | Page d'accueil, avec la démo intégrée en haut de page |
 | `home.css`, `home.js` | Mise en forme du site, calculateur de commission |
 | `demo/index.html` | Démo interactive de l'application (client, restaurant, livreur), fichier autonome. `?embed` masque le logo pour l'intégration dans l'accueil |
-| `demo.html` | Ancienne adresse de la démo, redirige vers `/demo/` |
 | `diagnostic.html`, `diagnostic.css`, `diagnostic.js` | Diagnostic restaurant ou livreur |
-| `mentions-legales/index.html`, `confidentialite/index.html`, `404.html` | Pages légales, page introuvable. `404.html` redirige les liens de l'app (`/m/<slug>` des QR codes, `/pro`, `/livreur`, `/order/…`) vers l'app web **app.zeroo.online** |
+| `mentions-legales/index.html`, `confidentialite/index.html`, `404.html` | Pages légales, page introuvable. `404.html` redirige l'ancienne adresse `/demo.html` vers `/demo/`, et les liens de l'app (`/m/<slug>` des QR codes, `/pro`, `/livreur`, `/order/…`) vers l'app web **app.zeroo.online** |
 | `img/zeeroo-logo*.png`, `favicon.png`, `apple-touch-icon.png` | Logo et icônes |
 | `og-image.png` | Image affichée quand on partage le lien (WhatsApp, Facebook…) |
 | `sitemap.xml`, `robots.txt`, `llms.txt` | Référencement (moteurs de recherche et assistants IA) |
