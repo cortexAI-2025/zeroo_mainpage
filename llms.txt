@@ -7,10 +7,10 @@ Service en préparation. Ce site présente le service, propose une démo interac
 
 ## Fonctionnement
 - Le client choisit le retrait sur place ou la livraison, selon les livreurs rattachés au restaurant. Il ne paie aucun frais : le prix de la carte, plus la livraison le cas échéant.
-- Livraison : deux paiements séparés. Le repas est payé au restaurant (débité quand le restaurant accepte la commande) ; la livraison est payée au livreur quand un livreur accepte la mission, par carte ou en espèces. Le prix de la livraison est fixé par le restaurant et affiché avant la commande.
-- Retrait : repas payé en ligne, ou en espèces au comptoir si le restaurant l'accepte.
+- Paiements directs : le client paie le restaurant et le livreur sur leur propre compte bancaire (virement instantané vers leur IBAN, ou leur lien de paiement : carte, Apple Pay, Google Pay), ou en espèces. Le restaurant et le livreur confirment la réception dans l'application. En livraison, deux paiements séparés : le repas au restaurant (après acceptation de la commande), la livraison au livreur (après acceptation de la mission). Le prix de la livraison est fixé par le restaurant et affiché avant la commande.
+- Retrait : repas payé par virement ou lien de paiement, ou au comptoir si le restaurant l'accepte.
 - Missions : proposées à tous les livreurs rattachés au restaurant, le premier qui accepte la prend ; 2 livraisons simultanées au plus par livreur.
-- ZeeRoo n'encaisse jamais l'argent des commandes ; aucune commission pour les restaurants et les livreurs. Frais du prestataire de paiement par carte distincts.
+- ZeeRoo n'encaisse jamais l'argent des commandes ; aucune commission pour les restaurants et les livreurs. Stripe sert uniquement au paiement des abonnements ZeeRoo (AiWorkPay).
 - Avis : le client note le restaurant et le livreur après la commande.
 - Fidélité : 9 menus achetés chez un restaurant, le 10e est offert par ce restaurant.
 - Livreurs : auto-entrepreneur ou société, SIRET vérifié ; rattachement aux restaurants avec leur accord.
