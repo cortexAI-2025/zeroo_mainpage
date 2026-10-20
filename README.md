@@ -1,6 +1,6 @@
 # zeroo_mainpage
 
-Site web **zeroo.online** : la page d'accueil de ZeeRoo, à emporter ou livré, sans commission.
+Site web **zeeroo.fr** : la page d'accueil de ZeeRoo, à emporter ou livré, sans commission.
 L'application (iOS, Android, web) est dans un autre dépôt : `cortexAI-2025/ZEROO`.
 
 Le site est en HTML et CSS, sans cookie. Polices Outfit et Figtree (Google Fonts). JavaScript : le calculateur de l'accueil (`home.js`), le diagnostic et la démo.
@@ -11,7 +11,7 @@ Le site est en HTML et CSS, sans cookie. Polices Outfit et Figtree (Google Fonts
 | `home.css`, `home.js` | Mise en forme du site, calculateur de commission |
 | `demo/index.html` | Démo interactive de l'application (client, restaurant, livreur), fichier autonome. `?embed` masque le logo pour l'intégration dans l'accueil |
 | `diagnostic.html`, `diagnostic.css`, `diagnostic.js` | Diagnostic restaurant ou livreur |
-| `mentions-legales/index.html`, `confidentialite/index.html`, `404.html` | Pages légales, page introuvable. `404.html` redirige l'ancienne adresse `/demo.html` vers `/demo/`, et les liens de l'app (`/m/<slug>` des QR codes, `/pro`, `/livreur`, `/order/…`) vers l'app web **app.zeroo.online** |
+| `mentions-legales/index.html`, `confidentialite/index.html`, `404.html` | Pages légales, page introuvable. `404.html` redirige l'ancienne adresse `/demo.html` vers `/demo/`, et les liens de l'app (`/m/<slug>` des QR codes, `/pro`, `/livreur`, `/order/…`) vers l'app web **app.zeeroo.fr** |
 | `img/zeeroo-logo*.png`, `favicon.png`, `apple-touch-icon.png` | Logo et icônes |
 | `og-image.png` | Image affichée quand on partage le lien (WhatsApp, Facebook…) |
 | `sitemap.xml`, `robots.txt`, `llms.txt` | Référencement (moteurs de recherche et assistants IA) |
@@ -30,11 +30,11 @@ La démo vient du dépôt de l'application (`docs/maquette`, `python3 docs/maque
 
 1. **GitHub** → Settings → Pages :
    - Source : « GitHub Actions » ;
-   - lancez le workflow « Publier zeroo.online » (onglet Actions → Run workflow) ;
-   - Custom domain : `zeroo.online` ;
+   - lancez le workflow « Publier zeeroo.fr » (onglet Actions → Run workflow) ;
+   - Custom domain : `zeeroo.fr` ;
    - une fois le certificat émis (quelques minutes à 24 h), cochez « Enforce HTTPS ».
-2. **Recommandé** : vérifiez le domaine dans les paramètres de votre compte GitHub (Settings → Pages → Add a domain). GitHub demande d'ajouter un enregistrement TXT chez IONOS. Cela empêche un autre compte GitHub d'utiliser zeroo.online.
-3. **IONOS** → Domaines & SSL → zeroo.online → DNS. Supprimez les enregistrements A, AAAA et CNAME existants pour `@` et `www` (page de parking IONOS), puis ajoutez ceux-ci :
+2. **Recommandé** : vérifiez le domaine dans les paramètres de votre compte GitHub (Settings → Pages → Add a domain). GitHub demande d'ajouter un enregistrement TXT chez IONOS. Cela empêche un autre compte GitHub d'utiliser zeeroo.fr.
+3. **IONOS** → Domaines & SSL → zeeroo.fr → DNS. Supprimez les enregistrements A, AAAA et CNAME existants pour `@` et `www` (page de parking IONOS), puis ajoutez ceux-ci :
 
 | Type | Nom d'hôte | Valeur |
 |---|---|---|
@@ -47,9 +47,10 @@ La démo vient du dépôt de l'application (`docs/maquette`, `python3 docs/maque
 | AAAA | @ | 2606:50c0:8002::153 |
 | AAAA | @ | 2606:50c0:8003::153 |
 | CNAME | www | cortexai-2025.github.io |
+| CNAME | app | cname.vercel-dns.com (app web, voir le dépôt `ZEROO`) |
 
 Ne touchez pas aux enregistrements MX, qui servent à l'e-mail.
 
 4. **IONOS** : créez la boîte mail (ou une redirection) `contact@aiworkpay.fr`.
 
-**Vérifier** : `dig +short zeroo.online` renvoie les 4 adresses GitHub, https://zeroo.online affiche la page, et https://www.zeroo.online y redirige.
+**Vérifier** : `dig +short zeeroo.fr` renvoie les 4 adresses GitHub, https://zeeroo.fr affiche la page, et https://www.zeeroo.fr y redirige.
