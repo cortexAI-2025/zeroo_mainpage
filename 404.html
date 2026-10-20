@@ -6,12 +6,12 @@
     <title>Page introuvable · ZeeRoo</title>
     <meta name="robots" content="noindex" />
     <script>
-      // Liens commerçant des QR codes (zeroo.online/m/<slug>) et pages de l'app : vers l'app web.
+      // Liens commerçant des QR codes (zeeroo.fr/m/<slug>) et pages de l'app : vers l'app web.
       (function () {
         var p = location.pathname;
         if (p === '/demo.html' || p === '/demo') return location.replace('/demo/' + location.search);
         if (/^\/(m|pro|livreur|order)\//.test(p) || p === '/pro' || p === '/livreur') {
-          location.replace('https://app.zeroo.online' + p + location.search + location.hash);
+          location.replace('https://app.zeeroo.fr' + p + location.search + location.hash);
         }
       })();
     </script>

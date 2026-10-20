@@ -1,6 +1,6 @@
-# Publie le site zeroo.online sur GitHub Pages à chaque modification de main.
-# Réglage unique : Settings → Pages → Source : « GitHub Actions », domaine : zeroo.online.
-name: Publier zeroo.online
+# Publie le site zeeroo.fr sur GitHub Pages à chaque modification de main.
+# Réglage unique : Settings → Pages → Source : « GitHub Actions », domaine : zeeroo.fr.
+name: Publier zeeroo.fr
 
 on:
   workflow_dispatch:
