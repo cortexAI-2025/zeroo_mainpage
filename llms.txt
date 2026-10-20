@@ -21,17 +21,17 @@ Service en préparation. Ce site présente le service, propose une démo interac
 - Livreur : 14,99 EUR HT/mois ou 149,99 EUR HT/an.
 
 ## Pages de référence
-- [Accueil](https://zeroo.online/)
-- [Démo interactive de l'application](https://zeroo.online/demo/)
-- [Comment ça marche](https://zeroo.online/#concept)
-- [Qui paie quoi](https://zeroo.online/#paiement)
-- [Restaurateurs](https://zeroo.online/#restaurants)
-- [Livreurs](https://zeroo.online/#livreurs)
-- [Tarifs](https://zeroo.online/#tarif)
-- [Questions fréquentes](https://zeroo.online/#faq)
-- [Diagnostic restaurant ou livreur](https://zeroo.online/diagnostic.html)
-- [Mentions légales](https://zeroo.online/mentions-legales/)
-- [Confidentialité](https://zeroo.online/confidentialite/)
+- [Accueil](https://zeeroo.fr/)
+- [Démo interactive de l'application](https://zeeroo.fr/demo/)
+- [Comment ça marche](https://zeeroo.fr/#concept)
+- [Qui paie quoi](https://zeeroo.fr/#paiement)
+- [Restaurateurs](https://zeeroo.fr/#restaurants)
+- [Livreurs](https://zeeroo.fr/#livreurs)
+- [Tarifs](https://zeeroo.fr/#tarif)
+- [Questions fréquentes](https://zeeroo.fr/#faq)
+- [Diagnostic restaurant ou livreur](https://zeeroo.fr/diagnostic.html)
+- [Mentions légales](https://zeeroo.fr/mentions-legales/)
+- [Confidentialité](https://zeeroo.fr/confidentialite/)
 
 ## Contact
 contact@aiworkpay.fr
