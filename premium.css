@@ -27,8 +27,3 @@ section:has(>.fold-section){padding:10px 0;background:#fff}.fold-body .section-h
 @media(max-width:700px){.wrap,.fold-section{width:calc(100% - 28px)}.hero{padding:34px 0}.hero h1{font-size:clamp(42px,10vw,58px)}.hero .lead{font-size:16px}.hero .actions{display:grid;grid-template-columns:1fr 1fr}.hero .actions a:first-child{grid-column:1/-1}.hero .actions .btn{font-size:13px;padding:8px;min-height:44px}.hero-facts{gap:7px}.hero-facts li{font-size:11px}.hero-facts b{font-size:15px}.demo-frame iframe{height:420px}.benefit-grid{grid-template-columns:1fr}.benefit-grid article{padding:18px}.quick-benefits{padding:12px 0 25px}.fold-section>summary{padding:18px;font-size:20px}.fold-body>.wrap{width:calc(100% - 30px)}section{padding:40px 0}.plans{grid-template-columns:1fr}.site-head .btn.small{font-size:12px;padding:0 10px}.site-head .brand img{height:30px}}
 @media(prefers-reduced-motion:reduce){.btn{transition:none}}
 
-/* Mascotte ZeeROO : logo typographique conservé */
-.mascot-signature{display:inline-flex;align-items:center;gap:12px;justify-self:start;border:1px solid #d9ead2;background:#f5fff0;border-radius:999px;padding:3px 16px 3px 4px;color:#277a1c;font-weight:800;font-size:13px;letter-spacing:.01em}
-.mascot-signature img{width:82px;height:52px;object-fit:contain;filter:drop-shadow(0 6px 10px #2b8b2530)}
-.footer-brand{display:inline-flex;align-items:center;gap:8px}.footer-brand img:first-child{height:34px;width:auto}.footer-brand img:last-child{height:30px;width:auto}
-@media(max-width:700px){.mascot-signature{font-size:11px}.mascot-signature img{width:64px;height:44px}}
