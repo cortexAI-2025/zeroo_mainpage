@@ -27,3 +27,18 @@ section:has(>.fold-section){padding:10px 0;background:#fff}.fold-body .section-h
 @media(max-width:700px){.wrap,.fold-section{width:calc(100% - 28px)}.hero{padding:34px 0}.hero h1{font-size:clamp(42px,10vw,58px)}.hero .lead{font-size:16px}.hero .actions{display:grid;grid-template-columns:1fr 1fr}.hero .actions a:first-child{grid-column:1/-1}.hero .actions .btn{font-size:13px;padding:8px;min-height:44px}.hero-facts{gap:7px}.hero-facts li{font-size:11px}.hero-facts b{font-size:15px}.demo-frame iframe{height:420px}.benefit-grid{grid-template-columns:1fr}.benefit-grid article{padding:18px}.quick-benefits{padding:12px 0 25px}.fold-section>summary{padding:18px;font-size:20px}.fold-body>.wrap{width:calc(100% - 30px)}section{padding:40px 0}.plans{grid-template-columns:1fr}.site-head .btn.small{font-size:12px;padding:0 10px}.site-head .brand img{height:30px}}
 @media(prefers-reduced-motion:reduce){.btn{transition:none}}
 
+
+/* Offre multi-établissements : compacte, accessible et responsive */
+.business-types{padding:40px 0 30px;background:#f7faf5}
+.business-types-heading{display:flex;align-items:end;justify-content:space-between;gap:22px;margin-bottom:18px}
+.business-types-heading .eyebrow{color:#287e1e;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.business-types-heading h2{font-size:clamp(27px,3.5vw,39px);line-height:1.12;letter-spacing:-.035em;margin:8px 0}
+.business-types-heading p{max-width:680px;font-size:15px;line-height:1.5;color:#506158;margin:0}
+.business-type-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.business-type-card{border:1px solid #e0e9db;background:#fff;border-radius:19px;padding:20px;min-height:195px}
+.business-type-icon{display:inline-flex;align-items:center;justify-content:center;width:43px;height:43px;border-radius:13px;background:#eef9e9;font-size:23px}
+.business-type-card h3{font-size:21px;line-height:1.15;margin:12px 0 7px}
+.business-type-card p{font-size:14px;line-height:1.45;color:#506158;margin:0 0 11px}
+.business-type-note{font-size:12px;font-weight:800;color:#287e1e}
+.business-types-footnote{font-size:12px;color:#5a675d;margin:14px 0 0}
+@media(max-width:700px){.business-types{padding:28px 0}.business-types-heading{display:block}.business-types-heading .btn{margin-top:15px}.business-type-grid{grid-template-columns:1fr;gap:9px}.business-type-card{min-height:0;padding:15px 17px}.business-type-card h3{font-size:19px;margin:7px 0 5px}.business-type-card p{margin-bottom:6px}}
