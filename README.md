@@ -1,6 +1,6 @@
 # zeroo-mainpage
 
-Site web **zeroo.online** : la page d'accueil de Zéroo, click-and-collect et livraison sans commission.
+Site web **zeeroo.fr** : la page d'accueil de Zeeroo, click-and-collect et livraison sans commission.
 L'application (iOS, Android, web) est dans un autre dépôt : `cortexAI-2025/ZEROO`.
 
 Le site est en HTML et CSS : pas de cookie, aucune ressource externe hormis la police Plus Jakarta Sans. Seules la démo (`/demo/`) et la page de diagnostic contiennent du JavaScript.
@@ -19,7 +19,7 @@ Le site est en HTML et CSS : pas de cookie, aucune ressource externe hormis la p
 | `favicon.png`, `favicon.svg`, `apple-touch-icon.png` | Icônes |
 | `og-image.png` | Image affichée quand on partage le lien (WhatsApp, Facebook…) |
 | `sitemap.xml`, `robots.txt`, `llms.txt` | Référencement (moteurs de recherche et assistants IA) |
-| `CNAME` | Domaine personnalisé pour GitHub Pages (`zeroo.online`) |
+| `CNAME` | Domaine personnalisé pour GitHub Pages (`zeeroo.fr`) |
 | `.github/workflows/deploy.yml` | Publication automatique sur GitHub Pages |
 
 Les boutons ouvrent un e-mail prérempli vers `contact@aiworkpay.fr` ou la page de diagnostic.
@@ -39,11 +39,11 @@ Grille validée, HT, avec 30 jours d'essai gratuit : Restaurant Start 19,99 € 
 
 1. **GitHub** → Settings → Pages :
    - Source : « GitHub Actions » ;
-   - lancez le workflow « Publier zeroo.online » (onglet Actions → Run workflow) ;
-   - Custom domain : `zeroo.online` ;
+   - lancez le workflow « Publier zeeroo.fr » (onglet Actions → Run workflow) ;
+   - Custom domain : `zeeroo.fr` ;
    - une fois le certificat émis (quelques minutes à 24 h), cochez « Enforce HTTPS ».
-2. **Recommandé** : vérifiez le domaine dans les paramètres de votre compte GitHub (Settings → Pages → Add a domain). GitHub demande d'ajouter un enregistrement TXT chez IONOS. Cela empêche un autre compte GitHub d'utiliser zeroo.online.
-3. **IONOS** → Domaines & SSL → zeroo.online → DNS. Supprimez les enregistrements A, AAAA et CNAME existants pour `@` et `www` (page de parking IONOS), puis ajoutez ceux-ci :
+2. **Recommandé** : vérifiez le domaine dans les paramètres de votre compte GitHub (Settings → Pages → Add a domain). GitHub demande d'ajouter un enregistrement TXT chez IONOS. Cela empêche un autre compte GitHub d'utiliser zeeroo.fr.
+3. **IONOS** → Domaines & SSL → zeeroo.fr → DNS. Supprimez les enregistrements A, AAAA et CNAME existants pour `@` et `www` (page de parking IONOS), puis ajoutez ceux-ci :
 
 | Type | Nom d'hôte | Valeur |
 |---|---|---|
@@ -61,7 +61,7 @@ Ne touchez pas aux enregistrements MX, qui servent à l'e-mail.
 
 4. **IONOS** : créez la boîte mail (ou une redirection) `contact@aiworkpay.fr`.
 
-**Vérifier** : `dig +short zeroo.online` renvoie les 4 adresses GitHub, https://zeroo.online affiche la page, et https://www.zeroo.online y redirige.
+**Vérifier** : `dig +short zeeroo.fr` renvoie les 4 adresses GitHub, https://zeeroo.fr affiche la page, et https://www.zeeroo.fr y redirige.
 
 ## Avant lancement commercial
 
