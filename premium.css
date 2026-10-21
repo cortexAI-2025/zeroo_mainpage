@@ -57,3 +57,14 @@ section:has(>.fold-section){padding:10px 0;background:#fff}.fold-body .section-h
 .business-type-icon{font:800 14px 'Outfit',sans-serif;letter-spacing:.08em;color:#237b19}
 @media(max-width:900px){.capability-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:700px){.capabilities{padding:40px 0}.capability-grid{grid-template-columns:1fr;gap:10px}.capability{min-height:0;padding:20px}.capability h3{margin:12px 0 7px;font-size:20px}.capabilities-footer{align-items:flex-start;flex-direction:column}}
+
+/* Grille des quatre abonnements ZEEROO */
+.plans-four{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;align-items:stretch}
+.plans-four .plan{min-width:0;display:flex;flex-direction:column;gap:12px}
+.plans-four .plan .for,.plans-four .plan .fine{margin:0}
+.plans-four .plan ul{flex:1}
+.plans-four .plan .btn{margin-top:auto}
+.plans-four .price{font-size:clamp(27px,2.7vw,39px);white-space:nowrap}
+.plans-four .price small{font-size:12px}
+@media(max-width:1100px){.plans-four{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.plans-four{grid-template-columns:1fr}.plans-four .price{font-size:40px}}
