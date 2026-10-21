@@ -42,3 +42,18 @@ section:has(>.fold-section){padding:10px 0;background:#fff}.fold-body .section-h
 .business-type-note{font-size:12px;font-weight:800;color:#287e1e}
 .business-types-footnote{font-size:12px;color:#5a675d;margin:14px 0 0}
 @media(max-width:700px){.business-types{padding:28px 0}.business-types-heading{display:block}.business-types-heading .btn{margin-top:15px}.business-type-grid{grid-template-columns:1fr;gap:9px}.business-type-card{min-height:0;padding:15px 17px}.business-type-card h3{font-size:19px;margin:7px 0 5px}.business-type-card p{margin-bottom:6px}}
+
+/* Présentation des fonctionnalités — design éditorial professionnel */
+.capabilities{padding:64px 0;background:#f8faf7}
+.capabilities .eyebrow{color:#287e1e;font-size:12px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+.capabilities .section-head{max-width:820px}
+.capability-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.capability{padding:26px;border:1px solid #e0e9df;border-radius:18px;background:#fff;min-height:198px}
+.capability-number{font-size:11px;font-weight:800;letter-spacing:.11em;color:#237b19}
+.capability h3{font:700 22px 'Outfit',sans-serif;letter-spacing:-.02em;margin:19px 0 10px;color:#101b17}
+.capability p{font-size:14px;line-height:1.65;color:#506158;margin:0}
+.capabilities-footer{margin-top:20px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.capabilities-footer p{max-width:760px;color:#405047;font-size:14px;line-height:1.6;margin:0}
+.business-type-icon{font:800 14px 'Outfit',sans-serif;letter-spacing:.08em;color:#237b19}
+@media(max-width:900px){.capability-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.capabilities{padding:40px 0}.capability-grid{grid-template-columns:1fr;gap:10px}.capability{min-height:0;padding:20px}.capability h3{margin:12px 0 7px;font-size:20px}.capabilities-footer{align-items:flex-start;flex-direction:column}}
