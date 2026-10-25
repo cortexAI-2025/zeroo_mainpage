@@ -1,26 +1,30 @@
-# ZeeRoo : à emporter ou livré, sans commission
+# ZeeRoo : vos restos, en direct. Sans commission
 
-> Site officiel de présentation de ZeeRoo, application de commande dans les restaurants de quartier (retrait sur place ou livraison par des livreurs indépendants), éditée par AiWorkPay. Langue : français.
+> Site officiel de présentation de ZeeRoo, application de commande dans les restaurants, boulangeries, snacks et dark kitchens de quartier (retrait sur place ou livraison par des livreurs indépendants), éditée par AiWorkPay. Langue : français.
 
 ## État du service
-Service en préparation. Ce site présente le service, propose une démo interactive fictive et un diagnostic pour les restaurants et les livreurs. Il ne crée pas de compte, ne prend pas de commande et ne facture aucun abonnement.
+L'application est en ligne : https://app.zeeroo.fr (navigateur, mobile et ordinateur ; applications iOS et Android à venir). L'annuaire des professionnels est consultable sans compte : https://app.zeeroo.fr/decouvrir. Un compte par e-mail est demandé pour commander. Ce site (zeeroo.fr) présente le service, propose une démo interactive fictive et un diagnostic pour les restaurants et les livreurs ; il ne prend pas de commande et ne facture rien.
 
 ## Fonctionnement
-- Le client choisit le retrait sur place ou la livraison, selon les livreurs rattachés au restaurant. Il ne paie aucun frais : le prix de la carte, plus la livraison le cas échéant.
-- Paiements directs : le client paie le restaurant et le livreur sur leur propre compte bancaire (par carte, Apple Pay ou Google Pay via le lien de paiement de chaque professionnel : SumUp, PayPal, Stripe…), ou en espèces. Le restaurant et le livreur confirment la réception dans l'application. En livraison, deux paiements séparés : le repas au restaurant (après acceptation de la commande), la livraison au livreur (après acceptation de la mission). Le prix de la livraison est fixé par le restaurant et affiché avant la commande.
+- Le client choisit le retrait sur place ou la livraison, selon les livreurs rattachés au restaurant, tout de suite ou à l'avance (créneaux de 15 minutes, jusqu'à 14 jours). Il ne paie aucun frais ZeeRoo : le prix de la carte, plus la livraison le cas échéant.
+- Annuaire : liste et carte, recherche par nom, ville ou code postal, filtres (catégorie, ouvert maintenant, retrait, livraison disponible, Happy Hour, moment du repas). Pour une dark kitchen, l'adresse n'est pas publiée.
+- Paiements directs : le client paie le restaurant et le livreur sur leur propre compte bancaire (par carte, Apple Pay ou Google Pay via le lien de paiement de chaque professionnel : SumUp, PayPal, Stripe…), ou en espèces. Le client indique qu'il a payé, le restaurant et le livreur confirment la réception dans l'application. En livraison, deux paiements séparés : le repas au restaurant (après acceptation de la commande), la livraison au livreur (après acceptation de la mission). Le prix de la livraison est fixé par le restaurant et affiché avant la commande.
 - Retrait : repas payé par carte via le lien du restaurant, ou au comptoir si le restaurant l'accepte.
-- Missions : proposées à tous les livreurs rattachés au restaurant, le premier qui accepte la prend ; 2 livraisons simultanées au plus par livreur.
+- Missions : proposées à tous les livreurs rattachés au restaurant, le premier qui accepte la prend. Livreur Start : une course à la fois, hors livraisons de nuit. Livreur Pro : jusqu'à 2 courses compatibles et livraisons de nuit (22 h – 6 h, heure de Paris).
 - ZeeRoo n'encaisse jamais l'argent des commandes ; aucune commission pour les restaurants et les livreurs. Stripe sert uniquement au paiement des abonnements ZeeRoo (AiWorkPay).
 - Avis : le client note le restaurant et le livreur après la commande.
 - Fidélité : 9 menus achetés chez un restaurant, le 10e est offert par ce restaurant.
 - Livreurs : auto-entrepreneur ou société, SIRET vérifié ; rattachement aux restaurants avec leur accord.
 
 ## Tarifs (30 jours d'essai gratuit, prix HT, TVA 20 % en sus)
-- Restaurant Start (retrait) : 19,99 EUR HT/mois ou 199,99 EUR HT/an.
-- Restaurant Pro (retrait et option livraison) : 29,99 EUR HT/mois ou 299,99 EUR HT/an.
-- Livreur : 14,99 EUR HT/mois ou 149,99 EUR HT/an.
+- Établissement Start (retrait et livraison, commandes programmées, QR code, fidélité, paniers anti-gaspi) : 19,99 EUR HT/mois ou 199,99 EUR HT/an.
+- Établissement Pro (Start + Happy Hours, mini-site dans l'annuaire, commandes groupées entreprises, statistiques avancées, une campagne mensuelle sur les réseaux ZEEROO après validation) : 29,99 EUR HT/mois ou 299,99 EUR HT/an.
+- Livreur Start : 14,99 EUR HT/mois ou 149,99 EUR HT/an.
+- Livreur Pro (jusqu'à 2 courses compatibles, livraisons de nuit) : 24,99 EUR HT/mois ou 249,99 EUR HT/an.
 
 ## Pages de référence
+- [Application](https://app.zeeroo.fr)
+- [Annuaire des professionnels](https://app.zeeroo.fr/decouvrir)
 - [Accueil](https://zeeroo.fr/)
 - [Démo interactive de l'application](https://zeeroo.fr/demo/)
 - [Comment ça marche](https://zeeroo.fr/#concept)

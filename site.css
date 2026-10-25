@@ -1,0 +1,98 @@
+/* ZeeRoo, mise à jour d'octobre 2026 : application en ligne, annuaire des pros, logos et kangourou.
+   Chargé après home.css et premium.css : n'ajoute que les blocs nouveaux. */
+
+/* Pastille « en ligne » avec le kangourou */
+.live-badge { display: inline-flex; align-items: center; gap: 12px; margin: 0; max-width: none; }
+.live-badge img { width: 58px; height: auto; flex-shrink: 0; }
+.live-badge span { display: inline-flex; align-items: center; gap: 8px; border: 1px solid #cfe6c7; background: #fff; border-radius: 999px; padding: 6px 14px; font: 600 14px var(--body); color: var(--ink-2); }
+.live-badge i { width: 9px; height: 9px; border-radius: 50%; background: var(--leaf); box-shadow: 0 0 0 4px #53c52b2e; }
+.live-badge b { color: var(--leaf-d); }
+.pro-links { margin: -6px 0 0; font-size: 14px; color: var(--muted); max-width: none; }
+.pro-links a { color: var(--leaf-d); font-weight: 700; }
+.hero .actions .btn { white-space: nowrap; }
+
+/* Annuaire des pros */
+.directory { padding: 56px 0; background: #fff; }
+.directory-grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 52px; align-items: center; }
+.directory-copy { display: grid; gap: 16px; }
+.directory .eyebrow { color: #287e1e; font-size: 12px; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
+.directory h2 { max-width: 20ch; }
+.directory-points { margin: 4px 0 8px; padding: 0; list-style: none; display: grid; gap: 14px; }
+.directory-points li { display: grid; gap: 2px; padding-left: 26px; position: relative; }
+.directory-points li::before { content: ''; position: absolute; left: 0; top: .72em; width: 14px; height: 4px; border-radius: 2px; background: var(--leaf); transform: skewX(-24deg); }
+.directory-points strong { font: 700 18px var(--display); }
+.directory-points span { color: var(--ink-2); font-size: 15px; }
+.directory .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 6px; }
+.directory-photo { position: relative; border-radius: 26px; overflow: hidden; box-shadow: 0 26px 60px #173b2530; background: var(--ink); }
+.directory-photo > img { width: 100%; height: auto; aspect-ratio: 1080 / 470; object-fit: cover; }
+.directory-photo figcaption { position: absolute; left: 14px; bottom: 14px; display: flex; align-items: center; gap: 10px; background: rgba(11, 28, 28, .82); backdrop-filter: blur(8px); color: #fff; border-radius: 14px; padding: 8px 14px 8px 10px; font: 700 14px var(--body); }
+.directory-photo figcaption img { width: 46px; height: auto; }
+
+/* Appel final avec QR code */
+.cta { position: relative; overflow: hidden; }
+.cta-grid { display: grid; grid-template-columns: minmax(0, 1fr) 270px; gap: 48px; align-items: center; }
+.cta .lead { max-width: 36em; }
+.cta-mail { margin: 18px 0 0; }
+.cta-mail a { color: #c9d6d2; font-weight: 600; }
+.qr-card { position: relative; background: #fff; color: var(--ink); border-radius: 24px; padding: 20px 20px 18px; display: grid; justify-items: center; gap: 12px; text-align: center; box-shadow: 0 24px 50px -24px #000a; }
+.qr-card > img:first-child { width: 148px; height: 148px; }
+.qr-card p { margin: 0; display: grid; gap: 2px; font: 700 15px var(--body); }
+.qr-card span { font-weight: 600; color: var(--leaf-d); }
+.qr-roo { position: absolute; right: -18px; top: -30px; width: 76px; height: auto; transform: rotate(-6deg); filter: drop-shadow(0 6px 10px #0006); }
+
+footer img { height: 30px; width: auto; }
+
+@media (max-width: 900px) {
+  .directory-grid { grid-template-columns: 1fr; gap: 28px; }
+  .directory h2 { max-width: none; }
+  .cta-grid { grid-template-columns: 1fr; gap: 28px; }
+  .qr-card { justify-self: start; }
+}
+@media (max-width: 700px) {
+  .directory { padding: 36px 0; }
+  .live-badge img { width: 46px; }
+  .live-badge span { font-size: 12px; padding: 5px 10px; }
+  .hero .actions { grid-template-columns: 1fr 1fr; }
+  .hero .actions a:first-child { grid-column: 1 / -1; }
+  .hero .actions a:last-child { grid-column: 1 / -1; }
+  .directory .actions { display: grid; }
+}
+
+/* Mini-site d'un établissement (ex. La Petite Pause) */
+.mini-hero { padding: 56px 0 40px; background: radial-gradient(ellipse at 80% 20%, #e6f8dd 0%, #fff 55%); }
+.mini-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 48px; align-items: start; }
+.mini-copy { display: grid; gap: 22px; padding-top: 18px; }
+.mini-copy h1 .line + .line { color: var(--leaf-d); }
+.mini-copy .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.mini-card { background: #fff; border: 1px solid var(--line); border-radius: 24px; padding: 26px; box-shadow: 0 22px 50px -30px #173b2540; }
+.mini-card h2 { font-size: 24px; max-width: none; margin-bottom: 14px; }
+.mini-card dl { margin: 0; display: grid; gap: 4px; }
+.mini-card dt { font: 800 11px var(--body); letter-spacing: .12em; text-transform: uppercase; color: var(--leaf-d); margin-top: 12px; }
+.mini-card dd { margin: 0; color: var(--ink); }
+.mini-card address { font-style: normal; }
+.mini-card a { color: var(--leaf-d); font-weight: 700; }
+.hours { width: 100%; border-collapse: collapse; font-size: 15px; }
+.hours th { text-align: left; font-weight: 600; padding: 5px 0; color: var(--ink-2); }
+.hours td { text-align: right; padding: 5px 0; font-variant-numeric: tabular-nums; }
+.hours tr + tr { border-top: 1px solid var(--line); }
+.mini-order { padding: 64px 0; }
+.mini-order-grid { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 52px; align-items: center; }
+.mini-order-grid > div:first-child { display: grid; gap: 16px; }
+.mini-points { margin: 4px 0 8px; padding: 0; list-style: none; display: grid; gap: 14px; }
+.mini-points li { display: grid; gap: 2px; padding-left: 26px; position: relative; }
+.mini-points li::before { content: ''; position: absolute; left: 0; top: .72em; width: 14px; height: 4px; border-radius: 2px; background: var(--leaf); transform: skewX(-24deg); }
+.mini-points strong { font: 700 18px var(--display); }
+.mini-points span { color: var(--ink-2); font-size: 15px; }
+.mini-order .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 6px; }
+.qr-card-light { border: 1px solid var(--line); box-shadow: 0 22px 50px -30px #173b2540; }
+.qr-card-light > img:first-child { width: 168px; height: 168px; }
+.qr-card-light span { font-size: 13px; }
+@media (max-width: 900px) {
+  .mini-grid, .mini-order-grid { grid-template-columns: 1fr; gap: 28px; }
+  .mini-order-grid .qr-card { justify-self: start; }
+}
+@media (max-width: 700px) {
+  .mini-hero { padding: 30px 0 24px; }
+  .mini-order { padding: 40px 0; }
+  .mini-copy .actions, .mini-order .actions { display: grid; }
+}
