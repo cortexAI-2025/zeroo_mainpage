@@ -28,7 +28,7 @@ jobs:
         run: |
           mkdir _site
           for f in *; do
-            case "$f" in README.md | _site) ;; *) cp -r "$f" _site/ ;; esac
+            case "$f" in README.md | _site | node_modules | tests | package.json | package-lock.json) ;; *) cp -r "$f" _site/ ;; esac
           done
       - uses: actions/upload-pages-artifact@v3
         with:
