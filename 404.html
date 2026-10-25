@@ -10,19 +10,20 @@
       (function () {
         var p = location.pathname;
         if (p === '/demo.html' || p === '/demo') return location.replace('/demo/' + location.search);
-        if (/^\/(m|pro|livreur|order)\//.test(p) || p === '/pro' || p === '/livreur') {
+        if (/^\/(m|pro|livreur|order)\//.test(p) || /^\/(pro|livreur|decouvrir|sign-in|sign-up|cart|favorites)\/?$/.test(p)) {
           location.replace('https://app.zeeroo.fr' + p + location.search + location.hash);
         }
       })();
     </script>
     <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Figtree:wght@400;500;600;700&display=swap" />
     <link rel="stylesheet" href="/home.css?v=20261013" />
   </head>
   <body>
     <main class="wrap notfound">
-      <img src="/img/zeeroo-logo.png" alt="ZeeRoo" width="312" height="80" />
+      <img src="/img/zeeroo-logo.png" alt="ZeeRoo" width="330" height="80" />
       <h1>Page introuvable</h1>
       <p class="lead">Cette adresse n’existe pas ou plus.</p>
       <a class="btn primary" href="/">Retour à l’accueil</a>
