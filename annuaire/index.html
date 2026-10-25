@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Annuaire des professionnels par ville et département | ZeeRoo</title>
+    <meta
+      name="description"
+      content="Trouvez les restaurants, snacks, boulangeries et autres commerces publiés sur ZeeRoo, par ville et département."
+    />
+    <meta name="theme-color" content="#277e08" />
+    <link rel="canonical" href="https://zeeroo.fr/annuaire/" />
+    <link rel="icon" href="/favicon.png" />
+    <link rel="stylesheet" href="/professionnels/site.css?v=20261025" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap header-row">
+        <a class="wordmark" href="/">ZeeRoo.</a>
+        <nav class="nav" aria-label="Navigation">
+          <a href="/annuaire/">Annuaire</a
+          ><a href="https://app.zeeroo.fr">Ouvrir l’application</a>
+        </nav>
+      </div>
+    </header>
+    <main class="wrap">
+      <section class="hero">
+        <span class="eyebrow">Le réseau ZeeRoo</span>
+        <h1>Vos commerces.<br />Tout près de chez vous.</h1>
+        <p class="lead">
+          Découvrez les professionnels présents sur ZeeRoo, leur fiche ou leur
+          mini-site. Puis ouvrez l’application pour commander.
+        </p>
+      </section>
+      <form
+        id="filters"
+        class="filters"
+        role="search"
+        aria-label="Rechercher un professionnel"
+      >
+        <label
+          >Ville<input
+            id="ville"
+            name="ville"
+            placeholder="Ex. Paris, Versailles…"
+            maxlength="80"
+            autocomplete="address-level2" /></label
+        ><label
+          >Département<select id="departement" name="departement">
+            <option value="">Tous les départements</option>
+          </select></label
+        ><label
+          >Nom du commerce<input
+            id="recherche"
+            name="recherche"
+            type="search"
+            maxlength="100"
+            placeholder="Restaurant, boulangerie…"
+        /></label>
+        <div class="filter-actions">
+          <button type="submit">Rechercher</button
+          ><button id="reset" type="button" class="text-button">
+            Effacer les filtres
+          </button>
+        </div>
+      </form>
+      <p id="status" class="status" role="status" aria-live="polite">
+        Chargement de l’annuaire…
+      </p>
+      <button id="retry" type="button" class="secondary" hidden>
+        Réessayer
+      </button>
+      <div id="results" aria-busy="true" aria-label="Commerces publiés"></div>
+      <div class="pagination">
+        <button id="more" type="button" class="secondary" hidden>
+          Afficher les commerces suivants
+        </button>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-row">
+        <span>ZeeRoo · Un service édité par AiWorkPay.</span>
+        <nav aria-label="Informations">
+          <a href="/">Découvrir ZeeRoo</a
+          ><a href="/mentions-legales/">Mentions légales</a
+          ><a href="/confidentialite/">Confidentialité</a>
+        </nav>
+      </div>
+    </footer>
+    <noscript
+      ><p class="wrap">
+        Activez JavaScript pour consulter les commerces publiés, ou
+        <a href="https://app.zeeroo.fr">ouvrez l’application</a>.
+      </p></noscript
+    >
+    <script type="module" src="/professionnels/annuaire.js?v=20261025"></script>
+  </body>
+</html>

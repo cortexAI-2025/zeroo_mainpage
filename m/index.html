@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Votre commerce sur ZeeRoo</title>
+    <meta
+      name="description"
+      content="Découvrez votre commerce et la commande directe avec ZeeRoo."
+    />
+    <meta name="theme-color" content="#277e08" />
+    <link rel="canonical" href="https://zeeroo.fr/m/" />
+    <link rel="icon" href="/favicon.png" />
+    <link rel="stylesheet" href="/professionnels/site.css?v=20261025" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap header-row">
+        <a class="wordmark" href="/">ZeeRoo.</a>
+        <nav class="nav" aria-label="Navigation">
+          <a href="/annuaire/">Annuaire</a
+          ><a href="https://app.zeeroo.fr">Ouvrir l’application</a>
+        </nav>
+      </div>
+    </header>
+    <main class="wrap">
+      <section class="banner">
+        <div class="banner-inner">
+          <div>
+            <span class="eyebrow">Vous nous découvrez grâce à un flyer ?</span>
+            <h2>Bienvenue sur ZeeRoo.</h2>
+            <p>
+              L’application pour commander directement chez les professionnels
+              de votre quartier, sans frais de service ZeeRoo. Le repas est
+              vendu et encaissé par le restaurant. Frais de livraison éventuels
+              indiqués avant validation.
+            </p>
+          </div>
+          <a class="button secondary" href="/#concept">Comment ça marche ?</a>
+        </div>
+      </section>
+      <p id="status" class="status" role="status" aria-live="polite">
+        Chargement du commerce…
+      </p>
+      <button id="retry" class="secondary" type="button" hidden>
+        Réessayer
+      </button>
+      <p id="unavailable" hidden>
+        <a class="button" href="/annuaire/">Voir l’annuaire des commerces</a>
+      </p>
+      <article id="profile" class="profile" hidden>
+        <div id="photo"></div>
+        <div class="profile-main">
+          <div id="brand"></div>
+          <span id="kind" class="eyebrow"></span>
+          <h1 id="name"></h1>
+          <p id="place" class="location"></p>
+          <p id="intro" class="lead"></p>
+          <p id="about" hidden></p>
+          <p id="modes" class="modes"></p>
+          <div id="actions" class="actions"></div>
+          <div class="profile-details">
+            <section>
+              <h2>Nous retrouver</h2>
+              <div id="contact"></div>
+            </section>
+            <section>
+              <h2>Horaires habituels</h2>
+              <div id="hours"></div>
+              <p class="location">
+                Les fermetures exceptionnelles et la disponibilité sont
+                confirmées dans l’application.
+              </p>
+            </section>
+          </div>
+          <section id="menu" hidden>
+            <h2>Un aperçu de notre carte</h2>
+            <p id="menu-status" class="location">Chargement du menu…</p>
+            <div id="menu-content"></div>
+          </section>
+        </div>
+      </article>
+      <section class="section-intro">
+        <h2>Votre prochain repas, en direct.</h2>
+        <p>
+          Découvrez le commerce ici, puis consultez sa carte et préparez votre
+          commande dans l’application ZeeRoo. Le retrait et la livraison
+          dépendent des options proposées par le professionnel.
+        </p>
+        <a href="/annuaire/"
+          >Explorer les commerces par ville et département →</a
+        >
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-row">
+        <span>ZeeRoo · Un service édité par AiWorkPay.</span>
+        <nav aria-label="Informations">
+          <a href="/">Découvrir ZeeRoo</a
+          ><a href="/mentions-legales/">Mentions légales</a
+          ><a href="/confidentialite/">Confidentialité</a>
+        </nav>
+      </div>
+    </footer>
+    <noscript
+      ><p class="wrap">
+        Activez JavaScript pour consulter les commerces publiés, ou
+        <a href="https://app.zeeroo.fr">ouvrez l’application</a>.
+      </p></noscript
+    >
+    <script type="module" src="/professionnels/fiche.js?v=20261025"></script>
+  </body>
+</html>
