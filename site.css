@@ -104,3 +104,7 @@ footer img { height: 30px; width: auto; }
 .trappes-list b { font: 800 19px var(--display); }
 .trappes-list span { font-size: 14px; color: var(--muted); }
 @media (max-width: 700px) { .trappes-list { grid-template-columns: 1fr; } }
+.trappes-sub { font: 800 clamp(24px,3vw,30px)/1.1 var(--display); letter-spacing: -.02em; margin: 34px 0 14px; }
+.trappes-list .plain { display: grid; gap: 4px; padding: 16px 18px; background: #fff; border: 1px solid var(--line); border-radius: 16px; }
+.trappes-list .plain b { font: 800 17px var(--display); }
+.trappes-list .plain span { font-size: 14px; color: var(--muted); }
