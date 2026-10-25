@@ -108,3 +108,7 @@ footer img { height: 30px; width: auto; }
 .trappes-list .plain { display: grid; gap: 4px; padding: 16px 18px; background: #fff; border: 1px solid var(--line); border-radius: 16px; }
 .trappes-list .plain b { font: 800 17px var(--display); }
 .trappes-list .plain span { font-size: 14px; color: var(--muted); }
+.status-note { margin: 0; font-size: 15px; color: var(--ink-2); background: #fff7e6; border: 1px solid #f1d9a8; border-radius: 14px; padding: 12px 14px; max-width: 58ch; }
+.trappes-list em { font: 700 12px var(--body); font-style: normal; letter-spacing: .04em; color: #9a5300; background: #fff1dd; border-radius: 999px; padding: 3px 9px; justify-self: start; margin-top: 4px; }
+.status-note { margin: 0; font-size: 15px; color: var(--ink-2); background: #fff7e6; border: 1px solid #f1d9a8; border-radius: 14px; padding: 12px 14px; max-width: 58ch; }
+.trappes-list em { font: 700 12px var(--body); font-style: normal; letter-spacing: .04em; color: #9a5300; background: #fff1dd; border-radius: 999px; padding: 3px 9px; justify-self: start; margin-top: 4px; }
