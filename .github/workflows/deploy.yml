@@ -24,11 +24,13 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      - name: Vérifier l’annuaire public
+        run: npm ci --ignore-scripts --no-audit --no-fund && npm test
       - name: Préparer les fichiers publiés (tout sauf README et fichiers cachés)
         run: |
           mkdir _site
           for f in *; do
-            case "$f" in README.md | _site) ;; *) cp -r "$f" _site/ ;; esac
+            case "$f" in README.md | _site | scripts | tests | node_modules | package.json | package-lock.json) ;; *) cp -r "$f" _site/ ;; esac
           done
       - uses: actions/upload-pages-artifact@v3
         with:

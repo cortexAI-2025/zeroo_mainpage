@@ -63,3 +63,31 @@ Ne touchez pas aux enregistrements MX, qui servent à l'e-mail.
 - Page `/cgu/` : conditions d'utilisation de la vitrine et informations précontractuelles indicatives ; à faire valider juridiquement avant exploitation commerciale.
 - Confidentialité mise à jour pour mentionner Google Fonts et WhatsApp.
 - La démo est une simulation, non une commande réelle. Les paiements et comptes sont dans `app.zeeroo.fr`.
+
+## Annuaire public global — import Yvelines (28/10/2026)
+
+L’annuaire est intégré dans `index.html#annuaire`, sur **zeeroo.fr**, en liste simple sans page/fiches générées. Il est distinct de l’annuaire des affiliés de l’application. Les liens de navigation « Annuaire des pros » restent sur cette section ; un lien explicitement nommé mène séparément aux affiliés.
+
+- Source fournie : `annuaire_yvelines_etablissements.csv`, 3 396 lignes ; SHA-256 `bff079596395c09eb9e270f6f0c622b38791b39eca8fbba731e520509782b6e4`.
+- Filtre : code NAF établissement **56.10C**, statut administratif **A**. 2 390 SIRET distincts retenus, 1 006 autres activités exclues. Enseigne, ou raison sociale lorsque l’enseigne manque. Données administratives consultées le 25/10/2026 ; contacts, horaires et services non inventés.
+- Source métier : `public.directory_businesses`, séparée de `merchants`, abonnements et comptes. La recherche publique est paginée par 25, avec nom/ville/code postal/SIRET et filtre de commune.
+- Aucun mini-site créé. Le seul rapprochement statique ajouté relie le SIRET `84749958900020`, raison sociale « LA PEITE PAUSE », à `/la-petite-pause/`, déjà existant : nom et adresse du 15 boulevard Martin Luther King à Trappes concordent. L’enseigne affichée reprend « La Petite Pause » du mini-site ; la raison sociale source est conservée. Les mini-sites applicatifs ne sont reliés qu’après rattachement vérifié d’un commerce existant, publié et disposant du mini-site.
+- `directory-config.js` contient uniquement l’URL du projet et une clé **publique publishable** ; aucune clé privilégiée.
+
+### Revendications
+
+Le bouton par ligne ouvre un formulaire de **demande** de revendication. Un professionnel peut créer son compte dans l’application, confirmer son e-mail, puis revenir se connecter sur la vitrine. La session est conservée en mémoire seulement (`persistSession: false`). La demande est enregistrée dans `directory_claims`, en attente, avec e-mail du compte confirmé, fonction, éléments de vérification et téléphone facultatif. Une demande en attente est idempotente par utilisateur/SIRET ; maximum 5 nouvelles demandes sur 24 heures. Les demandes ne sont lisibles que par le demandeur et les administrateurs autorisés.
+
+La validation se fait côté serveur par `review_directory_claim`, réservée aux administrateurs. Une acceptation exige un commerce **déjà existant**, appartenant au demandeur, avec le même SIRET, et une justification de contrôle ; elle est journalisée. Aucune création de compte professionnel, de mini-site ou d’abonnement facturé n’est déclenchée par une revendication. Les migrations et le test de sécurité sont dans le dépôt `ZEROO` (`public_pro_directory`, `directory_verified_minisite_links`, `public_directory.test.sql`).
+
+### Réimport reproductible
+
+```bash
+python3 scripts/prepare_directory_import.py /chemin/annuaire_yvelines_etablissements.csv --output-dir /tmp/zeeroo-directory-import
+```
+
+Appliquer les lots SQL dans l’ordre dans le projet Supabase `rgxesocsvhgsqoehxhgt`. Les lots font un upsert par SIRET, sans réactiver une référence dépubliée ni effacer un rattachement. Le CSV original n’est pas publié dans le site.
+
+### Vérification
+
+`npm ci --ignore-scripts && npm test` : tests de la liste, de la pagination/recherche, des liens conditionnels, de l’échappement des contenus, du formulaire et du filtrage CSV. Ils s’exécutent avant le déploiement Pages. `scripts/`, `tests/`, les dépendances et les manifestes npm ne sont pas copiés dans l’artefact public. Le parcours visuel a été vérifié à 320, 390 et 1 280 px avec les recherches publiques réelles ; la soumission de formulaire a été simulée en navigateur et vérifiée séparément en base dans une transaction annulée.
