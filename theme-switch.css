@@ -1,0 +1,16 @@
+/* Couleurs partagées avec les espaces de l'application ZeeROO. */
+.zeeroo-theme-switch{position:fixed;left:16px;bottom:18px;z-index:9998;border:1px solid #237b19;border-radius:999px;padding:11px 16px;background:#fff;color:#0b1c1c;box-shadow:0 5px 18px #0003;font:700 13px system-ui,sans-serif;cursor:pointer}
+.zeeroo-theme-switch:focus-visible{outline:3px solid #53c52b;outline-offset:3px}
+html[data-theme=dark]{--ink:#f5f8f4;--ink-2:#d3dfd4;--muted:#b7c8bb;--paper:#101713;--mint:#18271d;--line:#405548;--leaf-d:#7ed957;--leaf-dd:#9dea79;--green-l:#1d3525;--card:#19241d;--ink-2:#c6d5ca;color-scheme:dark}
+html[data-theme=dark] body{background:#101713;color:#f5f8f4}
+html[data-theme=dark] .site-head{background:#17231deb;border-color:#405548}
+html[data-theme=dark] .hero{background:radial-gradient(ellipse at 78% 24%,#203b25 0%,#101713 65%)}
+html[data-theme=dark] .hero-facts li,html[data-theme=dark] .benefit-grid article,html[data-theme=dark] .space,html[data-theme=dark] .fold-section,html[data-theme=dark] .plan,html[data-theme=dark] .qr-card,html[data-theme=dark] .trappes-list .plain,html[data-theme=dark] .card,html[data-theme=dark] .status-note{background:#1b2920;color:#f5f8f4;border-color:#405548}
+html[data-theme=dark] .tint,html[data-theme=dark] section.tint,html[data-theme=dark] .quick-benefits{background:#142019}
+html[data-theme=dark] .btn.ghost{color:#f5f8f4;border-color:#a5c6ad}
+html[data-theme=dark] .btn.primary{background:#2f8b24;color:#fff}
+html[data-theme=dark] input,html[data-theme=dark] textarea,html[data-theme=dark] select{background:#17231d!important;color:#fff!important;border-color:#617768!important}
+html[data-theme=dark] .zeeroo-theme-switch{background:#223629;color:#fff;border-color:#7ed957}
+html[data-theme=dark] .contact-lead-form input,html[data-theme=dark] .contact-lead-form textarea,html[data-theme=dark] .contact-lead-form select{background:#17231d;color:#fff}
+html[data-theme=dark] .site-foot,html[data-theme=dark] footer{border-color:#405548}
+@media(max-width:480px){.zeeroo-theme-switch{left:12px;bottom:12px;padding:10px 13px}}
