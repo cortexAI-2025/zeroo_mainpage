@@ -43,7 +43,7 @@
     claimForm.querySelector('[type=submit]').disabled = false;
     claimStatus.textContent = '';
     document.getElementById('directory-claim-name').textContent = record.display_name;
-    document.getElementById('directory-claim-address').textContent = `${record.address_line} · SIRET ${record.siret}`;
+    document.getElementById('directory-claim-address').textContent = `${record.address_line} · ${record.postal_code} ${record.city}`;
     renderAuth();
     dialog.showModal();
   }
@@ -54,7 +54,7 @@
       const info = node('div'); info.className = 'public-directory-info';
       info.append(node('h3', row.display_name), node('p', row.address_line));
       const meta = node('p', `${row.postal_code} ${row.city} · Restauration rapide`); meta.className = 'public-directory-meta';
-      const source = node('a', `SIRET ${row.siret}`); source.href = `https://annuaire-entreprises.data.gouv.fr/etablissement/${encodeURIComponent(row.siret)}`; source.target = '_blank'; source.rel = 'noopener noreferrer'; source.className = 'public-directory-source';
+      const source = node('span', 'Source : base Sirene, données publiques'); source.className = 'public-directory-source';
       info.append(meta, source);
       const actions = node('div'); actions.className = 'public-directory-row-actions';
       const mini = safeMiniUrl(row.mini_site_url);
@@ -110,7 +110,7 @@
     const submit = claimForm.querySelector('[type=submit]'); if (submit.disabled) return; submit.disabled = true;
     claimStatus.textContent = 'Enregistrement de votre demande…'; const form = new FormData(claimForm); const target = selected;
     try {
-      const { data, error } = await authClient.rpc('request_directory_claim', { p_siret: target.siret, p_capacity: String(form.get('capacity')).trim(), p_note: String(form.get('note')).trim(), p_phone: String(form.get('phone')).trim() || null });
+      const { data, error } = await authClient.rpc('request_directory_claim', { p_directory_id: target.id, p_capacity: String(form.get('capacity')).trim(), p_note: String(form.get('note')).trim(), p_phone: String(form.get('phone')).trim() || null });
       if (error) throw error;
       if (selected !== target) return;
       claimComplete = true;
