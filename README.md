@@ -55,3 +55,11 @@ Ne touchez pas aux enregistrements MX, qui servent à l'e-mail.
 4. **IONOS** : créez la boîte mail (ou une redirection) `contact@aiworkpay.fr`.
 
 **Vérifier** : `dig +short zeeroo.fr` renvoie les 4 adresses GitHub, https://zeeroo.fr affiche la page, et https://www.zeeroo.fr y redirige.
+
+## Révision vitrine (octobre 2026)
+
+- Bulle WhatsApp vers AiWorkPay : +33 6 02 40 51 47 (lien explicite, aucune conversation automatique).
+- Formulaire de contact : ouvre le client e-mail local via `mailto:` ; pas de backend ni de promesse d'envoi automatique. Vérifier sur mobile et desktop.
+- Page `/cgu/` : conditions d'utilisation de la vitrine et informations précontractuelles indicatives ; à faire valider juridiquement avant exploitation commerciale.
+- Confidentialité mise à jour pour mentionner Google Fonts et WhatsApp.
+- La démo est une simulation, non une commande réelle. Les paiements et comptes sont dans `app.zeeroo.fr`.
