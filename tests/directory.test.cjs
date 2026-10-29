@@ -1,19 +1,22 @@
-const {test}=require('node:test');const assert=require('node:assert/strict');const fs=require('node:fs');const {JSDOM}=require('jsdom');
-const html=fs.readFileSync(`${__dirname}/../index.html`,'utf8');const script=fs.readFileSync(`${__dirname}/../directory.js`,'utf8');
-const sample={id:'0b8a5e0e-3f6e-4b0a-9c1d-5a1b2c3d4e5f',display_name:'Restaurant test',address_line:'12 rue du Centre',postal_code:'78190',city:'TRAPPES',is_claimed:false,mini_site_url:null};
-async function screen({rows=[sample],total=2390,fail=false,hold=false}={}){
- const dom=new JSDOM(html,{url:'https://zeeroo.fr/',runScripts:'outside-only'}),w=dom.window,calls=[],pending=[];
- w.HTMLDialogElement.prototype.showModal=function(){this.setAttribute('open','')};w.HTMLDialogElement.prototype.close=function(){this.removeAttribute('open');this.dispatchEvent(new w.Event('close'))};
- w.ZEEROO_DIRECTORY_CONFIG={url:'https://test.supabase.co',publishableKey:'test-public'};
- w.fetch=async(url,opts)=>{const args=JSON.parse(opts.body);calls.push({url,args});if(url.endsWith('pro_directory_cities'))return{ok:true,json:async()=>[{city:'TRAPPES'}]};if(fail)throw Error('Unavailable');const response={ok:true,json:async()=>({rows,total,page_size:25})};return hold?new Promise(resolve=>pending.push(()=>resolve(response))):response;};
- w.eval(script);await new Promise(r=>setImmediate(r));return{w,calls,pending,close:()=>w.close()};
-}
-test('global directory is embedded on the main page and affiliation has a distinct link',async()=>{const s=await screen();try{assert.match(s.w.document.querySelector('#directory-title').textContent,/restauration rapide/);assert.equal(s.w.document.querySelector('#public-directory-list').children.length,1);assert.match(s.w.document.querySelector('#directory-status').textContent,/2.?390/);assert.equal(s.w.document.querySelector('header nav a[href="#annuaire"]').textContent,'Annuaire des pros');const app=[...s.w.document.querySelectorAll('#annuaire a')].find(a=>a.textContent.includes('affiliés'));assert.equal(app.href,'https://app.zeeroo.fr/decouvrir')}finally{s.close()}});
-test('a reference has claim and signup actions without generating a mini-site',async()=>{const s=await screen();try{const row=s.w.document.querySelector('.public-directory-row');assert.equal([...row.querySelectorAll('a')].some(a=>a.textContent==='Voir le mini-site'),false);assert.equal(row.querySelector('button').textContent,'Revendiquer cet établissement');row.querySelector('button').click();assert.ok(s.w.document.querySelector('dialog').hasAttribute('open'));assert.match(s.w.document.querySelector('#directory-claim-address').textContent,/12 rue du Centre/);assert.doesNotMatch(s.w.document.querySelector('#directory-claim-address').textContent,/SIRET|\d{14}/);assert.equal(s.w.document.querySelector('#directory-claim-form').hidden,true);assert.equal(row.querySelector('.public-directory-signup').href,'https://app.zeeroo.fr/sign-up')}finally{s.close()}});
-test('only an existing trusted mini-site URL is linked',async()=>{const s=await screen({rows:[{...sample,mini_site_url:'/la-petite-pause/'},{...sample,id:'1c9b6f1a-4a7e-4d3f-8b2a-6c7d8e9f0a1b',mini_site_url:'javascript:alert(1)'}],total:2});try{const links=[...s.w.document.querySelectorAll('.public-directory-row-actions a')].filter(a=>a.textContent==='Voir le mini-site');assert.equal(links.length,1);assert.equal(links[0].href,'https://zeeroo.fr/la-petite-pause/')}finally{s.close()}});
-test('database names and addresses are text rather than HTML',async()=>{const s=await screen({rows:[{...sample,display_name:'<img src=x onerror=alert(1)>',address_line:'<script>bad</script>'}]});try{const row=s.w.document.querySelector('.public-directory-row');assert.equal(row.querySelector('img,script'),null);assert.match(row.textContent,/<img/)}finally{s.close()}});
-test('pagination and city search send bounded backend offsets',async()=>{const s=await screen();try{s.w.document.querySelector('#directory-next').click();await new Promise(r=>setImmediate(r));assert.equal(s.calls.at(-1).args.p_offset,25);const city=s.w.document.querySelector('#directory-city');city.value='TRAPPES';city.dispatchEvent(new s.w.Event('change'));await new Promise(r=>setImmediate(r));assert.equal(s.calls.at(-1).args.p_offset,0);assert.equal(s.calls.at(-1).args.p_city,'TRAPPES')}finally{s.close()}});
-test('empty search results differ from an unavailable service',async()=>{const s=await screen({rows:[],total:0});const failed=await screen({fail:true});try{assert.match(s.w.document.querySelector('#directory-status').textContent,/aucun résultat/);assert.match(failed.w.document.querySelector('#directory-status').textContent,/temporairement indisponible/);assert.equal(failed.w.document.querySelectorAll('.public-directory-row').length,0)}finally{s.close();failed.close()}});
-test('FAQ structured data matches the visible global-directory explanation',async()=>{const s=await screen();try{const schema=JSON.parse(s.w.document.querySelector('script[type="application/ld+json"]').textContent);const faq=schema['@graph'].find(x=>x['@type']==='FAQPage').mainEntity.find(x=>x.name==='Comment trouver un établissement ?').acceptedAnswer.text;const summary=[...s.w.document.querySelectorAll('summary')].find(x=>x.textContent==='Comment trouver un établissement ?');assert.equal(summary.nextElementSibling.textContent,faq)}finally{s.close()}});
-test('no SIREN or SIRET is displayed, even if the service returned one',async()=>{const s=await screen({rows:[{...sample,siret:'12345678901234',source_url:'https://annuaire-entreprises.data.gouv.fr/etablissement/12345678901234'}]});try{const row=s.w.document.querySelector('.public-directory-row');assert.doesNotMatch(row.textContent,/SIRE[NT]|\d{14}/);assert.equal([...row.querySelectorAll('a')].some(a=>/annuaire-entreprises|\d{14}/.test(a.href)),false);const section=s.w.document.querySelector('#annuaire');assert.doesNotMatch(section.textContent,/SIRET|SIREN/);assert.doesNotMatch(section.querySelector('#directory-query').placeholder,/SIRET|SIREN/)}finally{s.close()}});
-test('a claim designates the establishment by its public identifier, never by a SIRET',async()=>{assert.match(script,/p_directory_id:\s*target\.id/);assert.doesNotMatch(script,/p_siret/);assert.doesNotMatch(script,/annuaire-entreprises/)});
+const test=require('node:test');const assert=require('node:assert/strict');const fs=require('node:fs');const path=require('node:path');
+const root=path.join(__dirname,'..');
+const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
+const privacy=fs.readFileSync(path.join(root,'confidentialite/index.html'),'utf8');
+test('le site public n’embarque plus d’annuaire général ni de clé Supabase',()=>{
+  for(const f of ['directory.js','directory-config.js','directory.css'])assert.equal(fs.existsSync(path.join(root,f)),false,f);
+  assert.doesNotMatch(html,/directory(-config)?\.(js|css)|directory-claim|public-directory|supabase/i);
+});
+test('la section annuaire renvoie uniquement vers les restaurants affiliés',()=>{
+  assert.match(html,/id="annuaire"/);
+  assert.match(html,/href="https:\/\/app\.zeeroo\.fr\/decouvrir"/);
+  assert.doesNotMatch(html,/2[\s  ]?390|SIRET|SIREN|revendiqu/i);
+});
+test('la FAQ visible et le JSON-LD décrivent le même annuaire',()=>{
+  const answer='L’annuaire de l’application (app.zeeroo.fr/decouvrir) liste uniquement les restaurants affiliés à ZEEROO.';
+  assert.equal(html.split(answer).length-1,2);
+  assert.doesNotMatch(html,/affiliés à ZEEROO ou non/);
+});
+test('la politique de confidentialité ne promet pas d’annuaire général',()=>{
+  assert.match(privacy,/ne liste que les restaurants affiliés/);
+  assert.doesNotMatch(privacy,/annuaire global/i);
+});
