@@ -24,7 +24,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - name: Vérifier l’annuaire public
+      - name: Vérifier le site
         run: npm ci --ignore-scripts --no-audit --no-fund && npm test
       - name: Préparer les fichiers publiés (tout sauf README et fichiers cachés)
         run: |
