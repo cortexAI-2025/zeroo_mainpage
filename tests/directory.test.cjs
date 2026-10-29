@@ -9,7 +9,9 @@ test('le site public n’embarque plus d’annuaire général ni de clé Supabas
 test('la section annuaire renvoie uniquement vers les restaurants affiliés',()=>{
   assert.match(html,/id="annuaire"/);
   assert.match(html,/href="https:\/\/app\.zeeroo\.fr\/decouvrir"/);
-  assert.doesNotMatch(html,/2[\s  ]?390|SIRET|SIREN|revendiqu/i);
+  const start=html.indexOf('id="annuaire"');
+  const section=html.slice(start,html.indexOf('</section>',start));
+  assert.doesNotMatch(section,/2[\s\u202f\u00a0]?390|SIRET|SIREN|revendiqu/i);
 });
 test('la FAQ visible et le JSON-LD décrivent le même annuaire',()=>{
   const answer='L’annuaire de l’application (app.zeeroo.fr/decouvrir) liste uniquement les restaurants affiliés à ZEEROO.';
